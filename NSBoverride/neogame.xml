@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pma_xml_export version="1.0">
+  <database name="neogame">
+
+    <!-- @itemtypes -->
+    <!-- Tombol custom: Security Contracts -->
+    <table name="itemtypes">
+      <column name="id">1</column>
+      <column name="nGroupID">90</column>
+      <column name="nSubgroupID">1</column>
+      <column name="strName">security contracts</column>
+      <column name="strDesc">Security Contracts</column>
+      <column name="strDescAlt"></column>
+      <column name="nCondID">0:1</column>
+      <column name="vImageList">D_ask.png</column>
+      <column name="vSpriteList"></column>
+      <column name="vImageUsage">0,0,0,0,0,0</column>
+      <column name="fWeight">50</column>
+      <column name="fMonetaryValue">0</column>
+      <column name="fMonetaryValueAlt">0</column>
+      <column name="fDurability">1</column>
+      <column name="fDegradePerHour">0</column>
+      <column name="fEquipDegradePerHour">0</column>
+      <column name="fDegradePerUse">0</column>
+      <column name="vDegradeTreasureIDs">0:3,0:3</column>
+      <column name="aEquipConditions"></column>
+      <column name="aPossessConditions"></column>
+      <column name="aUseConditions"></column>
+      <column name="aCapacities"></column>
+      <column name="vEquipSlots">-1</column>
+      <column name="vUseSlots"></column>
+      <column name="bSocketLocked">0</column>
+      <column name="vProperties">0:86</column>
+      <column name="aContentIDs"></column>
+      <column name="nFormatID">0:4</column>
+      <column name="nTreasureID">0:0</column>
+      <column name="nComponentID">0:3</column>
+      <column name="bMirrored">0</column>
+      <column name="nSlotDepth">0</column>
+      <column name="strChargeProfiles"></column>
+      <column name="aAttackModes"></column>
+      <column name="nStackLimit">1</column>
+      <column name="aSwitchIDs"></column>
+      <column name="aSounds">0:cuePickup,0:cuePutdown</column>
+    </table>
+    <!-- !@itemtypes -->
+
+    <!-- @treasuretable -->
+    <!-- Daftar tombol Workforce Center + tombol Security Contracts -->
+    <table name="treasuretable">
+      <column name="id">1</column>
+      <column name="strName">Workforce Center responses with Security Contracts</column>
+      <column name="aTreasures">0:90.10x1x1,0:90.12x1x1,0:90.68x1x1,0:90.9x1x1,0:90.15x1x1,0:90.66x1x1,0:90.8x1x1,NSE:90.96x1x1,NSE:90.100x1x1,NSE:90.97x1x1,NSE:90.98x1x1,NSE:90.108x1x1,NSE:90.99x1x1,90.1x1x1</column>
+      <column name="bNested">0</column>
+      <column name="bSuppress">0</column>
+      <column name="bIdentify">0</column>
+    </table>
+    <!-- !@treasuretable -->
+
+    <!-- @encounters -->
+    <!-- Dialog tujuan custom: NSBd:1 -->
+    <table name="encounters">
+      <column name="id">1</column>
+      <column name="strName">DMC Security Contracts</column>
+      <column name="strDesc">A uniformed clerk sits behind a reinforced counter. Several folders marked with DMC security seals are stacked beside him.
+
+He glances at your paperwork, then looks back at the terminal.
+
+&quot;The auxiliary security program is still being prepared. Check back later.&quot;</column>
+      <column name="strImg">EncNSBSecurity.png</column>
+      <column name="nTreasureID">0:3</column>
+      <column name="nRemoveTreasureID">0:3</column>
+      <column name="aConditions">0:1</column>
+      <column name="aPreConditions"></column>
+      <column name="fPrice">0</column>
+      <column name="aResponses">0:90.10x1=NSE:243x1x0x0x0</column>
+      <column name="aMinimapHexes"></column>
+      <column name="bRemoveCreatures">0</column>
+      <column name="bRemoveUsed">0</column>
+      <column name="nItemsID">0:3</column>
+      <column name="nCreatureID">0</column>
+      <column name="ptCreatureHex">0,0</column>
+      <column name="ptTeleport">0,0</column>
+      <column name="ptEditor">0,0</column>
+      <column name="nType">0</column>
+      <column name="fLootChance">0</column>
+      <column name="fAccidentChance">0</column>
+      <column name="fCreatureChance">0</column>
+      <column name="vAccidents">0</column>
+      <column name="vLoot">0</column>
+    </table>
+    <!-- !@encounters -->
+
+  </database>
+</pma_xml_export>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pma_xml_export version="1.0">
+  <database name="neogame">
+
+<table name="encounters">
+			<column name="id">236</column>
+			<column name="strName">Take a number.</column>
+			<column name="strDesc">[NSB PATCH 236 TEST]</column>
+			<column name="strImg">EncWorkforceCenter.png</column>
+			<column name="nTreasureID">0:3</column>
+			<column name="nRemoveTreasureID">0:3</column>
+			<column name="aConditions">0:1</column>
+			<column name="aPreConditions">316</column>
+			<column name="fPrice">0</column>
+			<column name="aResponses">90.96x1=237x1x0x0x0,90.96x1=240x1x0x0x0,90.96x1=241x1x0x0x0,90.96x1=242x1x0x0x0,90.100x1=239x1x0x0x0,90.100x1=238x1x0x0x0,90.97x1=244x1x0x0x0,90.98x1=246x1x0x0x0,90.97x1=248x1x0x0x0,90.98x1=249x1x0x0x0,90.108x1=310x1x0x0x0,90.108x1=346x1x0x0x0,90.108x1=347x1x0x0x0,0:90.66x1=299x1x0x0x0,NSBd:90.1x1=NSBd:1x1x0x0x0,0:90.10x1=235x1x0x0x0,=236x1x0x0x0</column>
+			<column name="aMinimapHexes"></column>
+			<column name="bRemoveCreatures">0</column>
+			<column name="bRemoveUsed">0</column>
+			<column name="nItemsID">NSBd:1</column>
+			<column name="nCreatureID">0</column>
+			<column name="ptCreatureHex">0,0</column>
+			<column name="ptTeleport">0,0</column>
+			<column name="ptEditor">5768,-19104</column>
+			<column name="nType">0</column>
+			<column name="fLootChance">0</column>
+			<column name="fAccidentChance">0</column>
+			<column name="fCreatureChance">0</column>
+			<column name="vAccidents">0</column>
+			<column name="vLoot">0</column>
+		</table>
+
+<table name="encounters">
+			<column name="id">243</column>
+			<column name="strName">Take a number.</column>
+			<column name="strDesc">[NSB PATCH 243 TEST]</column>
+			<column name="strImg">EncWorkforceCenter.png</column>
+			<column name="nTreasureID">33</column>
+			<column name="nRemoveTreasureID">0:3</column>
+			<column name="aConditions">0:1</column>
+			<column name="aPreConditions">-316</column>
+			<column name="fPrice">0</column>
+			<column name="aResponses">90.96x1=237x1x0x0x0,90.96x1=240x1x0x0x0,90.96x1=241x1x0x0x0,90.96x1=242x1x0x0x0,90.100x1=239x1x0x0x0,90.100x1=238x1x0x0x0,90.97x1=244x1x0x0x0,90.98x1=246x1x0x0x0,90.97x1=248x1x0x0x0,90.98x1=249x1x0x0x0,90.108x1=310x1x0x0x0,90.108x1=346x1x0x0x0,90.108x1=347x1x0x0x0,0:90.66x1=299x1x0x0x0,NSBd:90.1x1=NSBd:1x1x0x0x0,0:90.10x1=235x1x0x0x0,=236x1x0x0x0</column>
+			<column name="aMinimapHexes"></column>
+			<column name="bRemoveCreatures">0</column>
+			<column name="bRemoveUsed">0</column>
+			<column name="nItemsID">NSBd:1</column>
+			<column name="nCreatureID">0</column>
+			<column name="ptCreatureHex">0,0</column>
+			<column name="ptTeleport">0,0</column>
+			<column name="ptEditor">5768,-19104</column>
+			<column name="nType">0</column>
+			<column name="fLootChance">0</column>
+			<column name="fAccidentChance">0</column>
+			<column name="fCreatureChance">0</column>
+			<column name="vAccidents">0</column>
+			<column name="vLoot">0</column>
+		</table>
+
+  </database>
+</pma_xml_export>
