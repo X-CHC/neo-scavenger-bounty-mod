@@ -5,7 +5,7 @@
 <table name="encounters">
 			<column name="id">236</column>
 			<column name="strName">Take a number.</column>
-			<column name="strDesc">[NSB PATCH 236 TEST]</column>
+			<column name="strDesc">Test 1 number</column>
 			<column name="strImg">EncWorkforceCenter.png</column>
 			<column name="nTreasureID">0:3</column>
 			<column name="nRemoveTreasureID">0:3</column>
@@ -32,7 +32,7 @@
 <table name="encounters">
 			<column name="id">243</column>
 			<column name="strName">Take a number.</column>
-			<column name="strDesc">[NSB PATCH 243 TEST]</column>
+			<column name="strDesc">Test 2 number</column>
 			<column name="strImg">EncWorkforceCenter.png</column>
 			<column name="nTreasureID">33</column>
 			<column name="nRemoveTreasureID">0:3</column>
