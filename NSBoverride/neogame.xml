@@ -151,9 +151,9 @@
       <column name="bSocketLocked">0</column>
       <column name="vProperties">0:9,0:10,0:15,0:28,0:48,0:50,0:81</column>
       <column name="aContentIDs"></column>
-      <column name="nFormatID">0:3</column> <!-- Mengacu ke tabel containertypes -->
-      <column name="nTreasureID">0:3</column> <!-- Mengacu ke tabel treasuretable -->
-      <column name="nComponentID">0:3</column> <!-- Mengacu ke tabel treasuretable, Komponen Penyusun -->
+      <column name="nFormatID">0:3</column>
+      <column name="nTreasureID">0:3</column>
+      <column name="nComponentID">0:3</column>
       <column name="bMirrored">0</column>
       <column name="nSlotDepth">0</column>
       <column name="strChargeProfiles"></column>
@@ -199,13 +199,13 @@
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
-      <column name="aPreConditions"></column>
+      <column name="aPreConditions">0:60</column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSBd:90.2x1=NSBd:2x1x0x0x0,NSBd:90.3x1=NSBd:3x1x0x0x0</column> <!-- Responses/Jawaban di dialog tersebut -->
+      <column name="aResponses">NSBd:90.2x1=NSBd:2x1x0x0x0,NSBd:90.3x1=NSBd:3x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
-      <column name="nItemsID">NSBd:1</column> <!-- Mengacu ke tabel treasuretable, untuk gambar dialog. penting -->
+      <column name="nItemsID">NSBd:1</column>
       <column name="nCreatureID">0</column>
       <column name="ptCreatureHex">0,0</column>
       <column name="ptTeleport">0,0</column>
