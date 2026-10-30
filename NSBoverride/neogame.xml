@@ -11,7 +11,7 @@
       <column name="strDesc">Security Contracts</column>
       <column name="strDescAlt"></column>
       <column name="nCondID">0:1</column>
-      <column name="vImageList">Dialog_Bertanya.png</column>
+      <column name="vImageList">DialogBertanya.png</column>
       <column name="vSpriteList"></column>
       <column name="vImageUsage">0,0,0,0,0,0</column>
       <column name="fWeight">50</column>
@@ -51,7 +51,7 @@
       <column name="strDesc">Accept Security Contracts</column>
       <column name="strDescAlt"></column>
       <column name="nCondID">0:1</column>
-      <column name="vImageList">Dialog_Setuju.png</column>
+      <column name="vImageList">DialogSetuju.png</column>
       <column name="vSpriteList"></column>
       <column name="vImageUsage">0,0,0,0,0,0</column>
       <column name="fWeight">50</column>
@@ -91,7 +91,7 @@
       <column name="strDesc">Decline Security Contracts</column>
       <column name="strDescAlt"></column>
       <column name="nCondID">0:1</column>
-      <column name="vImageList">Dialog_Menolak.png</column>
+      <column name="vImageList">DialogMenolak.png</column>
       <column name="vSpriteList"></column>
       <column name="vImageUsage">0,0,0,0,0,0</column>
       <column name="fWeight">50</column>
@@ -123,6 +123,46 @@
       <column name="aSounds">0:cuePickup,0:cuePutdown</column>
     </table>
 
+    <table name="itemtypes">
+      <column name="id">4</column>
+      <column name="nGroupID">90</column>
+      <column name="nSubgroupID">4</column>
+      <column name="strName">Lencana Tier 1 untuk Contract</column>
+      <column name="strDesc">Lencana Tier 1</column>
+      <column name="strDescAlt"></column>
+      <column name="nCondID">0:1</column>
+      <column name="vImageList">LencanaTier1.png</column>
+      <column name="vSpriteList"></column>
+      <column name="vImageUsage">0,0,0,0,0,0</column>
+      <column name="fWeight">0.03</column>
+      <column name="fMonetaryValue">50</column>
+      <column name="fMonetaryValueAlt">0</column>
+      <column name="fDurability">1</column>
+      <column name="fDegradePerHour">0</column>
+      <column name="fEquipDegradePerHour">0</column>
+      <column name="fDegradePerUse">0</column>
+      <column name="vDegradeTreasureIDs">0:3,0:3</column>
+      <column name="aEquipConditions"></column>
+      <column name="aPossessConditions"></column>
+      <column name="aUseConditions"></column>
+      <column name="aCapacities"></column>
+      <column name="vEquipSlots">23=0=0,21,20</column>
+      <column name="vUseSlots"></column>
+      <column name="bSocketLocked">0</column>
+      <column name="vProperties">0:9,0:10,0:15,0:28,0:48,0:50,0:81</column>
+      <column name="aContentIDs"></column>
+      <column name="nFormatID">0:3</column> <!-- Mengacu ke tabel containertypes -->
+      <column name="nTreasureID">0:3</column> <!-- Mengacu ke tabel treasuretable -->
+      <column name="nComponentID">0:3</column> <!-- Mengacu ke tabel treasuretable, Komponen Penyusun -->
+      <column name="bMirrored">0</column>
+      <column name="nSlotDepth">0</column>
+      <column name="strChargeProfiles"></column>
+      <column name="aAttackModes"></column>
+      <column name="nStackLimit">1</column>
+      <column name="aSwitchIDs"></column>
+      <column name="aSounds">0:cueSmallPlasticItemPickUp,0:cuePlasticPutdown2</column>
+    </table>
+
     <!-- !@itemtypes -->
 
     <!-- @treasuretable -->
@@ -134,6 +174,15 @@
       <column name="bSuppress">0</column>
       <column name="bIdentify">0</column>
     </table>
+
+    <table name="treasuretable">
+			<column name="id">2</column>
+			<column name="strName">Lencana Contracts Tier 1</column>
+			<column name="aTreasures">90.4x1x1</column>
+			<column name="bNested">0</column>
+			<column name="bSuppress">0</column>
+			<column name="bIdentify">0</column>
+		</table>
     <!-- !@treasuretable -->
 
     <!-- @encounters -->
@@ -152,11 +201,11 @@
       <column name="aConditions">0:1</column>
       <column name="aPreConditions"></column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSBd:90.2x1=NSBd:2x1x0x0x0,NSBd:90.3x1=NSBd:3x1x0x0x0</column>
+      <column name="aResponses">NSBd:90.2x1=NSBd:2x1x0x0x0,NSBd:90.3x1=NSBd:3x1x0x0x0</column> <!-- Responses/Jawaban di dialog tersebut -->
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
-      <column name="nItemsID">NSBd:1</column>
+      <column name="nItemsID">NSBd:1</column> <!-- Mengacu ke tabel treasuretable, untuk gambar dialog. penting -->
       <column name="nCreatureID">0</column>
       <column name="ptCreatureHex">0,0</column>
       <column name="ptTeleport">0,0</column>
@@ -177,7 +226,7 @@
 &quot;Kamu bisa datang lagi nanti, senang berkerjasama dengan mu.&quot;</column>
 
       <column name="strImg">EncNSBSecurity.png</column> 
-      <column name="nTreasureID">0:1</column>
+      <column name="nTreasureID">NSBd:2</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
       <column name="aPreConditions"></column>
@@ -186,7 +235,7 @@
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
-      <column name="nItemsID">0:1</column>
+      <column name="nItemsID">0:3</column>
       <column name="nCreatureID">0</column>
       <column name="ptCreatureHex">0,0</column>
       <column name="ptTeleport">0,0</column>

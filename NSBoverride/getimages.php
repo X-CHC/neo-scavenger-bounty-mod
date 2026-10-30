@@ -1,4 +1,7 @@
-nRows=4&nCols=2&strImageURL0=EncNSBSecurity.png
-&strImageURL1=Dialog_Bertanya.png
-&strImageURL2=Dialog_Menolak.png
-&strImageURL3=Dialog_Setuju.png
+nRows=6&nCols=2&strImageURL0=EncNSBSecurity.png
+&strImageURL1=DialogBertanya.png
+&strImageURL2=DialogMenolak.png
+&strImageURL3=DialogSetuju.png
+&strImageURL4=LencanaTier1.png
+&strImageURL5=ItmMemStick.png
+
