@@ -2,8 +2,34 @@
 <pma_xml_export version="1.0">
   <database name="neogame">
 
-    <!-- @itemtypes -->
+    <!-- Table conditions -->
 
+    <table name="conditions">
+      <column name="id">1</column>
+      <column name="strName">Bad Mutha Contract (Active)</column>
+      <column name="strDesc">&lt;us&gt; menerima contrac membunuh 1 bad mutha.</column>
+      <column name="aFieldNames"></column>
+      <column name="aModifiers"></column>
+      <column name="aEffects"></column>
+      <column name="bFatal">0</column>
+      <column name="vIDNext"></column>
+      <column name="fDuration">0</column>
+      <column name="bPermanent">1</column>
+      <column name="vChanceNext">0</column>
+      <column name="bStackable">0</column>
+      <column name="bDisplay">1</column>
+      <column name="bDisplayOther">0</column>
+      <column name="bDisplayGameOver">0</column>
+      <column name="nColor">2</column>
+      <column name="bResetTimer">0</column>
+      <column name="bRemoveAll">1</column>
+      <column name="bRemovePostCombat">0</column>
+      <column name="nTransferRange">-1</column>
+      <column name="aThresholds"></column>
+    </table>
+    <!-- Table conditions end -->
+
+    <!-- @itemtypes -->
     <table name="itemtypes">
       <column name="id">1</column>
       <column name="nGroupID">90</column>
@@ -203,6 +229,46 @@
       <column name="aSwitchIDs"></column>
       <column name="aSounds">0:cuePickup,0:cuePutdown</column>
     </table>
+    
+    <table name="itemtypes">
+      <column name="id">5</column>
+      <column name="nGroupID">30</column>
+      <column name="nSubgroupID">4</column>
+      <column name="strName">Bukti Quest Bounty Bad Mutha</column>
+      <column name="strDesc">Jari Bad Mutha</column>
+      <column name="strDescAlt"></column>
+      <column name="nCondID">0:1</column>
+      <column name="vImageList">JariBadMutha.png</column>
+      <column name="vSpriteList"></column>
+      <column name="vImageUsage">0,0,0,0,0,0</column>
+      <column name="fWeight">0.03</column>
+      <column name="fMonetaryValue">50</column>
+      <column name="fMonetaryValueAlt">0</column>
+      <column name="fDurability">1</column>
+      <column name="fDegradePerHour">0</column>
+      <column name="fEquipDegradePerHour">0</column>
+      <column name="fDegradePerUse">0</column>
+      <column name="vDegradeTreasureIDs">0:3,0:3</column>
+      <column name="aEquipConditions"></column>
+      <column name="aPossessConditions"></column>
+      <column name="aUseConditions"></column>
+      <column name="aCapacities"></column>
+      <column name="vEquipSlots">23=0=0,21,20</column>
+      <column name="vUseSlots"></column>
+      <column name="bSocketLocked">0</column>
+      <column name="vProperties">0:9,0:10,0:15,0:28,0:48,0:50,0:81</column>
+      <column name="aContentIDs"></column>
+      <column name="nFormatID">0:3</column>
+      <column name="nTreasureID">0:3</column>
+      <column name="nComponentID">0:3</column>
+      <column name="bMirrored">0</column>
+      <column name="nSlotDepth">0</column>
+      <column name="strChargeProfiles"></column>
+      <column name="aAttackModes"></column>
+      <column name="nStackLimit">1</column>
+      <column name="aSwitchIDs"></column>
+      <column name="aSounds">0:cueGlassShardsPickup,0:cueGlassShardsPutdown</column>
+    </table>
 
     <!-- !@itemtypes -->
 
@@ -210,7 +276,7 @@
     <table name="treasuretable">
       <column name="id">1</column>
       <column name="strName">Workforce Center responses with Security Contracts</column>
-      <column name="aTreasures">0:90.10x1x1,0:90.12x1x1,0:90.68x1x1,0:90.9x1x1,0:90.15x1x1,0:90.66x1x1,0:90.8x1x1,NSE:90.96x1x1,NSE:90.100x1x1,NSE:90.97x1x1,NSE:90.98x1x1,NSE:90.108x1x1,NSE:90.99x1x1,NSBd:90.1x1x1,NSBd:90.2x1x1,NSBd:90.3x1x1,NSBd:90.4x1x1</column>
+      <column name="aTreasures">0:90.10x1x1,0:90.12x1x1,0:90.68x1x1,0:90.9x1x1,0:90.15x1x1,0:90.66x1x1,0:90.8x1x1,NSE:90.96x1x1,NSE:90.100x1x1,NSE:90.97x1x1,NSE:90.98x1x1,NSE:90.108x1x1,NSE:90.99x1x1,NSB:90.1x1x1,NSB:90.2x1x1,NSB:90.3x1x1,NSB:90.4x1x1</column>
       <column name="bNested">0</column>
       <column name="bSuppress">0</column>
       <column name="bIdentify">0</column>
@@ -243,11 +309,11 @@
       <column name="aConditions">0:1</column>
       <column name="aPreConditions">0:60</column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSBd:90.2x1=NSBd:2x1x0x0x0,NSBd:90.3x1=NSBd:3x1x0x0x0</column>
+      <column name="aResponses">NSB:90.2x1=NSB:2x1x0x0x0,NSB:90.3x1=NSB:3x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
-      <column name="nItemsID">NSBd:1</column>
+      <column name="nItemsID">NSB:1</column>
       <column name="nCreatureID">0</column>
       <column name="ptCreatureHex">0,0</column>
       <column name="ptTeleport">0,0</column>
@@ -268,7 +334,7 @@
 &quot;Kamu bisa datang lagi nanti, senang berkerjasama dengan mu.&quot;</column>
 
       <column name="strImg">EncNSBSecurity.png</column> 
-      <column name="nTreasureID">NSBd:2</column>
+      <column name="nTreasureID">NSB:2</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
       <column name="aPreConditions"></column>
@@ -333,11 +399,11 @@
       <column name="aConditions">0:1</column>
       <column name="aPreConditions"></column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSBd:90.4x1=NSBd:5x1x0x0x0</column>
+      <column name="aResponses">NSB:90.4x1=NSB:5x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
-      <column name="nItemsID">NSBd:1</column>
+      <column name="nItemsID">NSB:1</column>
       <column name="nCreatureID">0</column>
       <column name="ptCreatureHex">0,0</column>
       <column name="ptTeleport">0,0</column>
@@ -360,16 +426,16 @@
 &quot;Jika kamu memilih quest tersebut, tidak bisa kamu batalkan. jadi pikirkan baik baik&quot;</column>
 
       <column name="strImg">TempatBerburu.png</column> 
-      <column name="nTreasureID">0:1</column>
+      <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
       <column name="aPreConditions"></column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSBd:90.4x1=NSBd:6x1x0x0x0</column>
+      <column name="aResponses">NSB:90.4x1=NSB:6x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
-      <column name="nItemsID">NSBd:1</column>
+      <column name="nItemsID">NSB:1</column>
       <column name="nCreatureID">0</column>
       <column name="ptCreatureHex">0,0</column>
       <column name="ptTeleport">0,0</column>
@@ -392,10 +458,10 @@
       <column name="strImg">TempatBerburu.png</column> 
       <column name="nTreasureID">0:1</column>
       <column name="nRemoveTreasureID">0:3</column>
-      <column name="aConditions">0:1</column>
+      <column name="aConditions">1</column>
       <column name="aPreConditions"></column>
       <column name="fPrice">0</column>
-      <column name="aResponses">0:90.10x1=NSBd:5x1x0x0x0</column>
+      <column name="aResponses">0:90.10x1=NSB:5x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>

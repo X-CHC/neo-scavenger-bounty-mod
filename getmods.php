@@ -8,5 +8,5 @@ nRows=11
 &strModName6=NSEf&strModURL6=Mods/NeoScavZulu/NSZ_NSEoverride/NSEfashion
 &strModName7=NSE&strModURL7=Mods/NeoScavZulu/NSZ_NSEoverride/NSExtended
 &strModName8=0&strModURL8=Mods/NeoScavZulu/NSZoverride
-&strModName9=NSBd&strModURL9=Mods/NeoScavBounty/NSBoverride
+&strModName9=NSB&strModURL9=Mods/NeoScavBounty/NSBextended
 &strModName10=NSE&strModURL10=Mods/NeoScavBounty/NSB_NSEoverride/NSExtended
