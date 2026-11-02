@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+-
+- NeoScav Bounty Override
+- biji kuda
+-
+-->
+
+<pma_xml_export version="1.0">
+    <database name="neogame">
+        
+        <table name="treasuretable">
+            <column name="id">9</column> <!-- nambahin bukti quest bad mutha -->
+            <column name="strName">Bad Mutha loadout</column>
+            <column name="aTreasures">NSEf:139x1x1,NSE:253x.08x1,NSEf:4.1x.12x1|NSEf:159x.08x1,NSEf:2x1x1,NSEf:3x1x1,NSEf:10x.15x1-2,412x.2x1,413x1x0-1,414x.1x1,395x.9x1,415x1x0-2,NSE:109x.1x1,NSEa:64x.1x1,NSEf:130x.18x1|NSEf:102.18x.02x1|582x.01x1|596x.04x1,NSB:30.2x1x1</column>
+            <column name="bNested">0</column>
+            <column name="bSuppress">0</column>
+            <column name="bIdentify">0</column>
+        </table>
+		
+    </database>
+</pma_xml_export>
+
+

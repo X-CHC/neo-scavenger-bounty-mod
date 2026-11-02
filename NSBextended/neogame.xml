@@ -6,26 +6,50 @@
 
     <table name="conditions">
       <column name="id">1</column>
-      <column name="strName">Bad Mutha Contract (Active)</column>
+      <column name="strName">Bad Mutha Contract (Aktif)</column>
       <column name="strDesc">&lt;us&gt; menerima contrac membunuh 1 bad mutha.</column>
-      <column name="aFieldNames"></column>
-      <column name="aModifiers"></column>
-      <column name="aEffects"></column>
-      <column name="bFatal">0</column>
-      <column name="vIDNext"></column>
-      <column name="fDuration">0</column>
-      <column name="bPermanent">1</column>
-      <column name="vChanceNext">0</column>
-      <column name="bStackable">0</column>
-      <column name="bDisplay">1</column>
-      <column name="bDisplayOther">0</column>
-      <column name="bDisplayGameOver">0</column>
-      <column name="nColor">2</column>
-      <column name="bResetTimer">0</column>
-      <column name="bRemoveAll">1</column>
-      <column name="bRemovePostCombat">0</column>
-      <column name="nTransferRange">-1</column>
-      <column name="aThresholds"></column>
+			<column name="aFieldNames"></column>
+			<column name="aModifiers">0</column>
+			<column name="aEffects"></column>
+			<column name="bFatal">0</column>
+			<column name="vIDNext">2</column>
+			<column name="fDuration">168</column>
+			<column name="bPermanent">0</column>
+			<column name="vChanceNext">1</column>
+			<column name="bStackable">0</column>
+			<column name="bDisplay">1</column>
+			<column name="bDisplayOther">0</column>
+			<column name="bDisplayGameOver">0</column>
+			<column name="nColor">2</column>
+			<column name="bResetTimer">0</column>
+			<column name="bRemoveAll">0</column>
+			<column name="bRemovePostCombat">0</column>
+			<column name="nTransferRange">-1</column>
+			<column name="aThresholds"></column>
+    </table>
+
+    <table name="conditions">
+      <column name="id">2</column>
+      <column name="strName">Bad Mutha Contract (Non - Aktif)</column>
+      <column name="strDesc">&lt;us&gt; Selesai</column>
+			<column name="aFieldNames"></column>
+			<column name="aModifiers"></column>
+			<column name="aEffects"></column>
+			<column name="bFatal">0</column>
+			<column name="vIDNext"></column>
+			<column name="fDuration">0</column>
+			<column name="bPermanent">0</column>
+			<column name="vChanceNext">0</column>
+			<column name="bStackable">0</column>
+			<column name="bDisplay">0</column>
+			<column name="bDisplayOther">0</column>
+			<column name="bDisplayGameOver">0</column>
+			<column name="nColor">1</column>
+			<column name="bResetTimer">0</column>
+			<column name="bRemoveAll">1</column>
+			<column name="bRemovePostCombat">0</column>
+			<column name="nTransferRange">-1</column>
+			<column name="aThresholds"></column>
     </table>
     <!-- Table conditions end -->
 
@@ -229,11 +253,11 @@
       <column name="aSwitchIDs"></column>
       <column name="aSounds">0:cuePickup,0:cuePutdown</column>
     </table>
-    
+
     <table name="itemtypes">
       <column name="id">5</column>
       <column name="nGroupID">30</column>
-      <column name="nSubgroupID">4</column>
+      <column name="nSubgroupID">2</column>
       <column name="strName">Bukti Quest Bounty Bad Mutha</column>
       <column name="strDesc">Jari Bad Mutha</column>
       <column name="strDescAlt"></column>
@@ -267,16 +291,16 @@
       <column name="aAttackModes"></column>
       <column name="nStackLimit">1</column>
       <column name="aSwitchIDs"></column>
-      <column name="aSounds">0:cueGlassShardsPickup,0:cueGlassShardsPutdown</column>
+      <column name="aSounds">0:cuePickup,0:cuePutdown</column>
     </table>
-
+    
     <!-- !@itemtypes -->
 
     <!-- @treasuretable -->
     <table name="treasuretable">
       <column name="id">1</column>
       <column name="strName">Workforce Center responses with Security Contracts</column>
-      <column name="aTreasures">0:90.10x1x1,0:90.12x1x1,0:90.68x1x1,0:90.9x1x1,0:90.15x1x1,0:90.66x1x1,0:90.8x1x1,NSE:90.96x1x1,NSE:90.100x1x1,NSE:90.97x1x1,NSE:90.98x1x1,NSE:90.108x1x1,NSE:90.99x1x1,NSB:90.1x1x1,NSB:90.2x1x1,NSB:90.3x1x1,NSB:90.4x1x1</column>
+      <column name="aTreasures">0:90.10x1x1,0:90.12x1x1,0:90.68x1x1,0:90.9x1x1,0:90.15x1x1,0:90.66x1x1,0:90.8x1x1,NSE:90.96x1x1,NSE:90.100x1x1,NSE:90.97x1x1,NSE:90.98x1x1,NSE:90.108x1x1,NSE:90.99x1x1,NSB:90.1x1x1,NSB:90.2x1x1,NSB:90.3x1x1,NSB:90.4x1x1,30.2x1x1</column>
       <column name="bNested">0</column>
       <column name="bSuppress">0</column>
       <column name="bIdentify">0</column>
@@ -284,8 +308,17 @@
 
     <table name="treasuretable">
 			<column name="id">2</column>
-			<column name="strName">Lencana Contracts Tier 1</column>
+			<column name="strName">Item Untuk Bounty</column>
 			<column name="aTreasures">30.1x1x1</column>
+			<column name="bNested">0</column>
+			<column name="bSuppress">0</column>
+			<column name="bIdentify">0</column>
+		</table>
+
+    <table name="treasuretable">
+			<column name="id">3</column>
+			<column name="strName">jari Bad Mutha</column>
+			<column name="aTreasures">30.2x1x1</column>
 			<column name="bNested">0</column>
 			<column name="bSuppress">0</column>
 			<column name="bIdentify">0</column>
@@ -366,7 +399,7 @@
 &quot;Semoga Beruntung&quot;</column>
 
       <column name="strImg">EncNSBSecurity.png</column> 
-      <column name="nTreasureID">0:1</column>
+      <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
       <column name="aPreConditions"></column>
@@ -375,7 +408,7 @@
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
-      <column name="nItemsID">0:1</column>
+      <column name="nItemsID">0:3</column>
       <column name="nCreatureID">0</column>
       <column name="ptCreatureHex">0,0</column>
       <column name="ptTeleport">0,0</column>
@@ -394,7 +427,7 @@
       <column name="strDesc">&quot;Yo kamu datang, apa yang kamu mau lakukan?&quot;</column>
 
       <column name="strImg">TempatBerburu.png</column> 
-      <column name="nTreasureID">0:1</column>
+      <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
       <column name="aPreConditions"></column>
@@ -431,7 +464,7 @@
       <column name="aConditions">0:1</column>
       <column name="aPreConditions"></column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSB:90.4x1=NSB:6x1x0x0x0</column>
+      <column name="aResponses">NSB:90.4x1=NSB:6x1x0x0x0,30.2x1=NSB:10x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
@@ -456,16 +489,70 @@
 &quot;Ingat, waktunya hanya satu minggu. JIka lewat akan hangus.&quot;</column>
 
       <column name="strImg">TempatBerburu.png</column> 
-      <column name="nTreasureID">0:1</column>
+      <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
-      <column name="aConditions">1</column>
+      <column name="aConditions">1,-2</column>
       <column name="aPreConditions"></column>
       <column name="fPrice">0</column>
-      <column name="aResponses">0:90.10x1=NSB:5x1x0x0x0</column>
+      <column name="aResponses">0:90.10x1=NSE:243x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
       <column name="nItemsID">0:1</column>
+      <column name="nCreatureID">0</column>
+      <column name="ptCreatureHex">0,0</column>
+      <column name="ptTeleport">0,0</column>
+      <column name="ptEditor">0,0</column>
+      <column name="nType">0</column>
+      <column name="fLootChance">0</column>
+      <column name="fAccidentChance">0</column>
+      <column name="fCreatureChance">0</column>
+      <column name="vAccidents">0</column>
+      <column name="vLoot">0</column>
+    </table>
+
+    <table name="encounters">
+      <column name="id">10</column>
+      <column name="strName">Quest Bounty Bad Mutha - Clear</column>
+      <column name="strDesc">&quot; Gemlo, lu berhasil. gua kira cuma gimik&quot;</column>
+      <column name="strImg">TempatBerburu.png</column>
+      <column name="nTreasureID">0:3</column>
+      <column name="nRemoveTreasureID">NSB:3</column>
+      <column name="aConditions">2,-1</column>
+      <column name="aPreConditions">1</column>
+      <column name="fPrice">0</column>
+      <column name="aResponses">=NSB:11x1x0x0x0</column>
+      <column name="aMinimapHexes"></column>
+      <column name="bRemoveCreatures">0</column>
+      <column name="bRemoveUsed">0</column>
+      <column name="nItemsID">0:3</column>
+      <column name="nCreatureID">0</column>
+      <column name="ptCreatureHex">0,0</column>
+      <column name="ptTeleport">0,0</column>
+      <column name="ptEditor">0,0</column>
+      <column name="nType">0</column>
+      <column name="fLootChance">0</column>
+      <column name="fAccidentChance">0</column>
+      <column name="fCreatureChance">0</column>
+      <column name="vAccidents">0</column>
+      <column name="vLoot">0</column>
+    </table>
+
+    <table name="encounters">
+      <column name="id">11</column>
+      <column name="strName">Quest Bounty Bad Mutha - Clear</column>
+      <column name="strDesc">&quot; Nih buat jajan lu.&quot;</column>
+      <column name="strImg">TempatBerburu.png</column>
+      <column name="nTreasureID">0:9</column>
+      <column name="nRemoveTreasureID">0:3</column>
+      <column name="aConditions">0:1</column>
+      <column name="aPreConditions"></column>
+      <column name="fPrice">0</column>
+      <column name="aResponses">0:90.10x1=NSE:243x1x0x0x0</column>
+      <column name="aMinimapHexes"></column>
+      <column name="bRemoveCreatures">0</column>
+      <column name="bRemoveUsed">0</column>
+      <column name="nItemsID">0:3</column>
       <column name="nCreatureID">0</column>
       <column name="ptCreatureHex">0,0</column>
       <column name="ptTeleport">0,0</column>

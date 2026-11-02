@@ -1,4 +1,4 @@
-nRows=11
+nRows=12
 &strModName0=NSEb&strModURL0=Mods/NeoScavExtended/NSEbattle
 &strModName1=NSEf&strModURL1=Mods/NeoScavExtended/NSEfashion
 &strModName2=NSEa&strModURL2=Mods/NeoScavExtended/NSEaid
@@ -10,3 +10,4 @@ nRows=11
 &strModName8=0&strModURL8=Mods/NeoScavZulu/NSZoverride
 &strModName9=NSB&strModURL9=Mods/NeoScavBounty/NSBextended
 &strModName10=NSE&strModURL10=Mods/NeoScavBounty/NSB_NSEoverride/NSExtended
+&strModName11=0&strModURL11=Mods/NeoScavBounty/NSBoverride
