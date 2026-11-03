@@ -281,7 +281,7 @@
     </table>
 
     <table name="itemtypes">
-      <column name="id">5</column>
+      <column name="id">6</column>
       <column name="nGroupID">30</column>
       <column name="nSubgroupID">2</column>
       <column name="strName">Bukti Quest Bounty Bad Mutha</column>
@@ -295,7 +295,7 @@
       <column name="fMonetaryValue">50</column>
       <column name="fMonetaryValueAlt">0</column>
       <column name="fDurability">1</column>
-      <column name="fDegradePerHour">0</column>
+      <column name="fDegradePerHour">0.00595238</column>
       <column name="fEquipDegradePerHour">0</column>
       <column name="fDegradePerUse">0</column>
       <column name="vDegradeTreasureIDs">0:3,0:3</column>
