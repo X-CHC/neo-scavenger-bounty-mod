@@ -51,6 +51,32 @@
 			<column name="nTransferRange">-1</column>
 			<column name="aThresholds"></column>
     </table>
+
+    <table name="conditions">
+      <column name="id">3</column>
+      <column name="strName">Status Tolak Bounty Quest</column>
+      <column name="strDesc">&lt;us&gt; Bersifat Permanen</column>
+			<column name="aFieldNames"></column>
+			<column name="aModifiers"></column>
+      <column name="aEffects"></column>
+      <column name="bFatal">0</column>
+      <column name="vIDNext">0</column>
+      <column name="fDuration">0</column>
+      <column name="bPermanent">0</column>
+      <column name="vChanceNext">0</column>
+      <column name="bStackable">0</column>
+      <column name="bDisplay">0</column>
+      <column name="bDisplayOther">0</column>
+      <column name="bDisplayGameOver">1</column>
+      <column name="nColor">0</column>
+      <column name="bResetTimer">1</column>
+      <column name="bRemoveAll">0</column>
+      <column name="bRemovePostCombat">0</column>
+      <column name="nTransferRange">-1</column>
+      <column name="aThresholds"></column>
+    </table>
+
+
     <!-- Table conditions end -->
 
     <!-- @itemtypes -->
@@ -340,9 +366,9 @@
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
-      <column name="aPreConditions">0:60</column>
+      <column name="aPreConditions">0:60,-3</column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSB:90.2x1=NSB:2x1x0x0x0,NSB:90.3x1=NSB:3x1x0x0x0</column>
+      <column name="aResponses">NSB:90.2x1=NSB:2x1x0x0x0,NSB:90.3x1=NSB:3x1x0x0x0,=NSB:1x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
@@ -401,7 +427,7 @@
       <column name="strImg">EncNSBSecurity.png</column> 
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
-      <column name="aConditions">0:1</column>
+      <column name="aConditions">3</column>
       <column name="aPreConditions"></column>
       <column name="fPrice">0</column>
       <column name="aResponses">0:90.10x1=NSE:243x1x0x0x0</column>
@@ -430,9 +456,9 @@
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
-      <column name="aPreConditions"></column>
+      <column name="aPreConditions">-3</column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSB:90.4x1=NSB:5x1x0x0x0</column>
+      <column name="aResponses">NSB:90.4x1=NSB:5x1x0x0x0,=NSB:4x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
@@ -464,7 +490,7 @@
       <column name="aConditions">0:1</column>
       <column name="aPreConditions"></column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSB:90.4x1=NSB:6x1x0x0x0,30.2x1=NSB:10x1x0x0x0</column>
+      <column name="aResponses">NSB:90.4x1=NSB:6x1x0x0x0,30.2x1=NSB:10x1x0x0x0,=NSB:5x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
