@@ -17,10 +17,10 @@
 			<column name="bPermanent">0</column>
 			<column name="vChanceNext">1</column>
 			<column name="bStackable">0</column>
-			<column name="bDisplay">1</column>
+			<column name="bDisplay">0</column>
 			<column name="bDisplayOther">0</column>
 			<column name="bDisplayGameOver">0</column>
-			<column name="nColor">2</column>
+			<column name="nColor">3</column>
 			<column name="bResetTimer">0</column>
 			<column name="bRemoveAll">0</column>
 			<column name="bRemovePostCombat">0</column>
@@ -44,7 +44,7 @@
 			<column name="bDisplay">0</column>
 			<column name="bDisplayOther">0</column>
 			<column name="bDisplayGameOver">0</column>
-			<column name="nColor">1</column>
+			<column name="nColor">0</column>
 			<column name="bResetTimer">0</column>
 			<column name="bRemoveAll">1</column>
 			<column name="bRemovePostCombat">0</column>
@@ -67,7 +67,7 @@
       <column name="bStackable">0</column>
       <column name="bDisplay">0</column>
       <column name="bDisplayOther">0</column>
-      <column name="bDisplayGameOver">1</column>
+      <column name="bDisplayGameOver">0</column>
       <column name="nColor">0</column>
       <column name="bResetTimer">1</column>
       <column name="bRemoveAll">0</column>
@@ -76,6 +76,77 @@
       <column name="aThresholds"></column>
     </table>
 
+    <table name="conditions">
+      <column name="id">4</column>
+      <column name="strName">Status Terima Bounty Quest</column>
+      <column name="strDesc">&lt;us&gt; Bersifat Permanen</column>
+			<column name="aFieldNames"></column>
+			<column name="aModifiers"></column>
+      <column name="aEffects"></column>
+      <column name="bFatal">0</column>
+      <column name="vIDNext">0</column>
+      <column name="fDuration">0</column>
+      <column name="bPermanent">0</column>
+      <column name="vChanceNext">0</column>
+      <column name="bStackable">0</column>
+      <column name="bDisplay">0</column>
+      <column name="bDisplayOther">0</column>
+      <column name="bDisplayGameOver">0</column>
+      <column name="nColor">0</column>
+      <column name="bResetTimer">1</column>
+      <column name="bRemoveAll">0</column>
+      <column name="bRemovePostCombat">0</column>
+      <column name="nTransferRange">-1</column>
+      <column name="aThresholds"></column>
+    </table>
+
+    <table name="conditions">
+			<column name="id">5</column>
+			<column name="strName">Minggu Ke dua work permit perpanjang</column>
+			<column name="strDesc">&lt;us&gt;'s DSL work permit start minggu kedua</column>
+			<column name="aFieldNames"></column>
+			<column name="aModifiers"></column>
+			<column name="aEffects"></column>
+			<column name="bFatal">0</column>
+			<column name="vIDNext">6</column>
+			<column name="fDuration">168</column>
+			<column name="bPermanent">0</column>
+			<column name="vChanceNext">1</column>
+			<column name="bStackable">0</column>
+			<column name="bDisplay">0</column>
+			<column name="bDisplayOther">0</column>
+			<column name="bDisplayGameOver">0</column>
+			<column name="nColor">1</column>
+			<column name="bResetTimer">0</column>
+			<column name="bRemoveAll">1</column>
+			<column name="bRemovePostCombat">0</column>
+			<column name="nTransferRange">-1</column>
+			<column name="aThresholds"></column>
+		</table>
+
+    <table name="conditions">
+			<column name="id">6</column>
+			<column name="strName">Selesai Minggu Ke dua work permit </column>
+			<column name="strDesc">&lt;us&gt;'s DSL work permit selesai minggu kedua</column>
+			<column name="aFieldNames"></column>
+			<column name="aModifiers"></column>
+			<column name="aEffects"></column>
+			<column name="bFatal">0</column>
+			<column name="vIDNext">0</column>
+			<column name="fDuration">0</column>
+			<column name="bPermanent">0</column>
+			<column name="vChanceNext">0</column>
+			<column name="bStackable">0</column>
+			<column name="bDisplay">0</column>
+			<column name="bDisplayOther">0</column>
+			<column name="bDisplayGameOver">0</column>
+			<column name="nColor">1</column>
+			<column name="bResetTimer">0</column>
+			<column name="bRemoveAll">1</column>
+			<column name="bRemovePostCombat">0</column>
+			<column name="nTransferRange">-1</column>
+			<column name="aThresholds"></column>
+		</table>
 
     <!-- Table conditions end -->
 
@@ -295,7 +366,7 @@
       <column name="fMonetaryValue">50</column>
       <column name="fMonetaryValueAlt">0</column>
       <column name="fDurability">1</column>
-      <column name="fDegradePerHour">0.00595238</column>
+      <column name="fDegradePerHour">0.00595238</column> <!-- 0.00595238-->
       <column name="fEquipDegradePerHour">0</column>
       <column name="fDegradePerUse">0</column>
       <column name="vDegradeTreasureIDs">0:3,0:3</column>
@@ -325,8 +396,8 @@
     <!-- @treasuretable -->
     <table name="treasuretable">
       <column name="id">1</column>
-      <column name="strName">Workforce Center responses with Security Contracts</column>
-      <column name="aTreasures">0:90.10x1x1,0:90.12x1x1,0:90.68x1x1,0:90.9x1x1,0:90.15x1x1,0:90.66x1x1,0:90.8x1x1,NSE:90.96x1x1,NSE:90.100x1x1,NSE:90.97x1x1,NSE:90.98x1x1,NSE:90.108x1x1,NSE:90.99x1x1,NSB:90.1x1x1,NSB:90.2x1x1,NSB:90.3x1x1,NSB:90.4x1x1,30.2x1x1</column>
+      <column name="strName">Dialog Bounty Quest</column>
+      <column name="aTreasures">NSB:90.1x1x1,NSB:90.2x1x1,NSB:90.3x1x1,NSB:90.4x1x1,30.2x1x1,NSE:90.96x1x1</column>
       <column name="bNested">0</column>
       <column name="bSuppress">0</column>
       <column name="bIdentify">0</column>
@@ -355,8 +426,8 @@
     <!-- @encounters -->
     <table name="encounters">
       <column name="id">1</column>
-      <column name="strName">DMC Security Contracts</column>
-      <column name="strDesc">Seorang petugas berseragam melirik kearah mu sambil membaca dokumen mu.
+      <column name="strName">"Hey kemarilah"</column>
+      <column name="strDesc">Seorang petugas berseragam melihat kearah mu sambil membaca dokumen mu.
 
 &quot;Sepertinya kamu menjanjikan dari dokumen mu, apakah kamu tertarik untuk melakukan beberapa misi untuk DMC?&quot;
 
@@ -366,7 +437,7 @@
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
-      <column name="aPreConditions">0:60,-3</column>
+      <column name="aPreConditions">0:60,-3,-4,6</column>
       <column name="fPrice">0</column>
       <column name="aResponses">NSB:90.2x1=NSB:2x1x0x0x0,NSB:90.3x1=NSB:3x1x0x0x0,=NSB:1x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
@@ -395,7 +466,7 @@
       <column name="strImg">EncNSBSecurity.png</column> 
       <column name="nTreasureID">NSB:2</column>
       <column name="nRemoveTreasureID">0:3</column>
-      <column name="aConditions">0:1</column>
+      <column name="aConditions">4</column>
       <column name="aPreConditions"></column>
       <column name="fPrice">0</column>
       <column name="aResponses">0:90.10x1=NSE:243x1x0x0x0</column>
@@ -456,7 +527,7 @@
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
-      <column name="aPreConditions">-3</column>
+      <column name="aPreConditions">-3,4</column>
       <column name="fPrice">0</column>
       <column name="aResponses">NSB:90.4x1=NSB:5x1x0x0x0,=NSB:4x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
@@ -490,7 +561,7 @@
       <column name="aConditions">0:1</column>
       <column name="aPreConditions"></column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSB:90.4x1=NSB:6x1x0x0x0,30.2x1=NSB:10x1x0x0x0,=NSB:5x1x0x0x0</column>
+      <column name="aResponses">NSE:90.96x1=NSB:6x1x0x0x0,30.2x5=NSB:10x1x0x0x0,=NSB:5x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>

@@ -10,9 +10,18 @@
     <database name="neogame">
 
         <table name="treasuretable">
-            <column name="id">402</column>
+            <column name="id">402</column> <!-- menambahkan loot jari bad mutha di mayat.-->
             <column name="strName">humanoid corpse</column>
-            <column name="aTreasures">16.2x1.0x1-1,NSB:30.2x0.3x1</column>
+            <column name="aTreasures">16.2x1.0x1-1,NSB:30.2x1.0x1-1</column>
+            <column name="bNested">0</column>
+            <column name="bSuppress">0</column>
+            <column name="bIdentify">0</column>
+        </table>
+
+        <table name="treasuretable">
+            <column name="id">85</column> <!-- tambah dialog quest bounty-->
+            <column name="strName">Enter, Exit, Give, Reach, Left, Downstairs, Upstairs, Form, Permit, Mec Train, Elec Train, Mec Work, Elec Work, Info Term, MRE, Yhat, What, Rboot, Rglove, Wjacket, Wvest, Wpants, Gmask, GmaskF, SCBA, o2, Hazmat, T-shirt, Backpack</column>
+            <column name="aTreasures">90.10x1x1,90.12x1x1,90.68x1x1,90.9x1x1,90.15x1x1,90.66x1x1,90.8x1x1,NSE:90.96x1x1,NSE:90.100x1x1,NSE:90.97x1x1,NSE:90.98x1x1,NSE:90.108x1x1,NSE:90.99x1x1,NSE:101.1x1x1,NSEf:102.3x1x1,NSEf:102.4x1x1,NSEf:50.6x1x1,NSEf:24.4x1x1,NSEf:78.41x1x1,NSEf:78.43x1x1,NSEf:95.6x1x1,102.6x1x1,40.0x1x1,NSE:102.10x1x1,NSE:46.9x1x1,NSE:102.13x1x1,NSEf:78.44x1x1,NSEf:5.8x1x1,NSB:90.1x1x1,NSB:90.2x1x1,NSB:90.3x1x1,NSB:90.4x1x1,NSB:30.2x1x1</column>
             <column name="bNested">0</column>
             <column name="bSuppress">0</column>
             <column name="bIdentify">0</column>
@@ -20,5 +29,3 @@
 		
     </database>
 </pma_xml_export>
-
-

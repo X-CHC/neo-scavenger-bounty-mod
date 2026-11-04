@@ -9,59 +9,67 @@
 <pma_xml_export version="1.0">
   <database name="neogame">
 
-<table name="encounters">
-			<column name="id">236</column>
-			<column name="strName">Take a number.</column>
-			<column name="strDesc">Test 1 number</column>
-			<column name="strImg">EncWorkforceCenter.png</column>
-			<column name="nTreasureID">0:3</column>
-			<column name="nRemoveTreasureID">0:3</column>
-			<column name="aConditions">0:1</column>
-			<column name="aPreConditions">316</column>
-			<column name="fPrice">0</column>
-			<column name="aResponses">90.96x1=237x1x0x0x0,90.96x1=240x1x0x0x0,90.96x1=241x1x0x0x0,90.96x1=242x1x0x0x0,90.100x1=239x1x0x0x0,90.100x1=238x1x0x0x0,90.97x1=244x1x0x0x0,90.98x1=246x1x0x0x0,90.97x1=248x1x0x0x0,90.98x1=249x1x0x0x0,90.108x1=310x1x0x0x0,90.108x1=346x1x0x0x0,90.108x1=347x1x0x0x0,0:90.66x1=299x1x0x0x0,NSB:90.1x1=NSB:1x1x0x0x0,0:90.10x1=235x1x0x0x0,=236x1x0x0x0,NSB:90.4x1=NSB:4x1x0x0x0</column>
-			<column name="aMinimapHexes"></column>
-			<column name="bRemoveCreatures">0</column>
-			<column name="bRemoveUsed">0</column>
-			<column name="nItemsID">NSB:1</column>
-			<column name="nCreatureID">0</column>
-			<column name="ptCreatureHex">0,0</column>
-			<column name="ptTeleport">0,0</column>
-			<column name="ptEditor">5768,-19104</column>
-			<column name="nType">0</column>
-			<column name="fLootChance">0</column>
-			<column name="fAccidentChance">0</column>
-			<column name="fCreatureChance">0</column>
-			<column name="vAccidents">0</column>
-			<column name="vLoot">0</column>
-		</table>
+	<table name="encounters">
+		<column name="id">235</column>
+		<column name="strName">Inside the Workforce center.</column>
+		<column name="strDesc">These offices offer a number of employment services for both employers and work seekers, including learning programs, recruitment of workers, pre-screening and job listings. Here, you can see people in groups, some filling out forms, others swamping a staff member with questions, and others still piling up at the elevators or stairs.
 
-<table name="encounters">
-			<column name="id">243</column>
-			<column name="strName">Take a number.</column>
-			<column name="strDesc">Test 2 number</column>
-			<column name="strImg">EncWorkforceCenter.png</column>
-			<column name="nTreasureID">33</column>
-			<column name="nRemoveTreasureID">0:3</column>
-			<column name="aConditions">0:1</column>
-			<column name="aPreConditions">-316</column>
-			<column name="fPrice">0</column>
-			<column name="aResponses">90.96x1=237x1x0x0x0,90.96x1=240x1x0x0x0,90.96x1=241x1x0x0x0,90.96x1=242x1x0x0x0,90.100x1=239x1x0x0x0,90.100x1=238x1x0x0x0,90.97x1=244x1x0x0x0,90.98x1=246x1x0x0x0,90.97x1=248x1x0x0x0,90.98x1=249x1x0x0x0,90.108x1=310x1x0x0x0,90.108x1=346x1x0x0x0,90.108x1=347x1x0x0x0,0:90.66x1=299x1x0x0x0,NSB:90.1x1=NSB:1x1x0x0x0,0:90.10x1=235x1x0x0x0,=236x1x0x0x0,NSB:90.4x1=NSB:4x1x0x0x0</column>
-			<column name="aMinimapHexes"></column>
-			<column name="bRemoveCreatures">0</column>
-			<column name="bRemoveUsed">0</column>
-			<column name="nItemsID">NSB:1</column>
-			<column name="nCreatureID">0</column>
-			<column name="ptCreatureHex">0,0</column>
-			<column name="ptTeleport">0,0</column>
-			<column name="ptEditor">5768,-19104</column>
-			<column name="nType">0</column>
-			<column name="fLootChance">0</column>
-			<column name="fAccidentChance">0</column>
-			<column name="fCreatureChance">0</column>
-			<column name="vAccidents">0</column>
-			<column name="vLoot">0</column>
-		</table>
+Some of the walls and pillars have information brochures, so you take one, but much of what's in there is unhelpful. Some of the facilities and services are free to use but most of them need a proper work permit and probably other documents, which means paperwork - that last part, at least, is made abundantly clear, even if the exact purpose of a lot of the documentation isn't.</column>
+		<column name="strImg">EncWorkforceCenter.png</column>
+		<column name="nTreasureID">0:3</column>
+		<column name="nRemoveTreasureID">0:3</column>
+		<column name="aConditions">0:1</column>
+		<column name="aPreConditions"></column>
+		<column name="fPrice">0</column>
+		<column name="aResponses">90.99x1=250x1x0x0x0,0:90.68x1=236x1x0x0x0,0:90.9x1=278x1x0x0x0,0:90.68x1=243x1x0x0x0,0:90.8x1=265x1x0x0x0,0:90.66x1=299x1x0x0x0,0:90.10x1=234x1x0x0x0,NSB:90.4x1=NSB:4x1x0x0x0,NSB:90.1x1=NSB:1x1x0x0x0,=235x1x0x0x0</column>
+		<column name="aMinimapHexes"></column>
+		<column name="bRemoveCreatures">0</column>
+		<column name="bRemoveUsed">0</column>
+		<column name="nItemsID">0:85</column>
+		<column name="nCreatureID">0</column>
+		<column name="ptCreatureHex">0,0</column>
+		<column name="ptTeleport">0,0</column>
+		<column name="ptEditor">5768,-19104</column>
+		<column name="nType">0</column>
+		<column name="fLootChance">0</column>
+		<column name="fAccidentChance">0</column>
+		<column name="fCreatureChance">0</column>
+		<column name="vAccidents">0</column>
+		<column name="vLoot">0</column>
+	</table>
+
+	<table name="encounters">
+		<column name="id">239</column>
+		<column name="strName">Renew a work permit - $500</column>
+		<column name="strDesc">Your number is called and you head to the corresponding window. &quot;DSL form, work permit, skill program, or job,&quot; a tired looking office worker behind the window spits without even looking at you.
+
+&quot;work permit,&quot; you quickly answer. &quot;your form, please,&quot; the worker drone says as he points towards the slit under the window. You deposit both your DSL form and your expired work permit, as indicated in the information brochure you grabbed earlier. The drone grabs the documents and gives them a quick scan. You hear the familiar sound of those cheap, mushy keyboard switches and a printer starts to work somewhere. The worker grabs a sheet of paper from the printer and types on the machine one last time.
+
+&quot;Have a nice day,&quot; the office drone says as your documents are deposited in the slit under the window, which is now blocked by a curtain.
+
+You grab your papers and walk past the waiting area.</column>
+		<column name="strImg">EncDSLWorkPermit.png</column>
+		<column name="nTreasureID">34</column>
+		<column name="nRemoveTreasureID">0:3</column>
+		<column name="aConditions">308,-309,NSB:5</column>
+		<column name="aPreConditions">307,309</column>
+		<column name="fPrice">500</column>
+		<column name="aResponses">=235x1x0x0x0</column>
+		<column name="aMinimapHexes"></column>
+		<column name="bRemoveCreatures">0</column>
+		<column name="bRemoveUsed">0</column>
+		<column name="nItemsID">0:3</column>
+		<column name="nCreatureID">0</column>
+		<column name="ptCreatureHex">0,0</column>
+		<column name="ptTeleport">0,0</column>
+		<column name="ptEditor">5768,-19104</column>
+		<column name="nType">0</column>
+		<column name="fLootChance">0</column>
+		<column name="fAccidentChance">0</column>
+		<column name="fCreatureChance">0</column>
+		<column name="vAccidents">0</column>
+		<column name="vLoot">0</column>
+	</table>
 
   </database>
 </pma_xml_export>
