@@ -427,11 +427,11 @@
     <table name="encounters">
       <column name="id">1</column>
       <column name="strName">"Hey kemarilah"</column>
-      <column name="strDesc">Seorang petugas berseragam melihat kearah mu sambil membaca dokumen mu.
+      <column name="strDesc">Seorang petugas berseragam memanggilmu sambil membaca dokumen mu.
 
 &quot;Sepertinya kamu menjanjikan dari dokumen mu, apakah kamu tertarik untuk melakukan beberapa misi untuk DMC?&quot;
 
-&quot;Tenang, kamu dapat imbalannya sepadan.&quot;</column>
+&quot;Tenang, kamu dapat imbalannya.&quot;</column>
 
       <column name="strImg">EncNSBSecurity.png</column> 
       <column name="nTreasureID">0:3</column>
@@ -561,7 +561,7 @@
       <column name="aConditions">0:1</column>
       <column name="aPreConditions"></column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSE:90.96x1=NSB:6x1x0x0x0,30.2x5=NSB:10x1x0x0x0,=NSB:5x1x0x0x0</column>
+      <column name="aResponses">NSE:90.96x1=NSB:6x1x0x0x0,30.2x3=NSB:10x1x0x0x0,=NSB:5x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
@@ -581,7 +581,7 @@
     <table name="encounters">
       <column name="id">6</column>
       <column name="strName">Quest Bounty Bad Mutha</column>
-      <column name="strDesc">&quot;Pilihan bagus, bunuh 1 bad mutha dan serahkan item nya kepadaku.&quot;
+      <column name="strDesc">&quot;Pilihan bagus, bunuh 3 bad mutha dan serahkan item nya kepadaku.&quot;
 
 &quot;Ingat, waktunya hanya satu minggu. JIka lewat akan hangus.&quot;</column>
 
