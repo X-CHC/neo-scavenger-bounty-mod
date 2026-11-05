@@ -6,8 +6,8 @@
 
     <table name="conditions">
       <column name="id">1</column>
-      <column name="strName">Bad Mutha Contract (Aktif)</column>
-      <column name="strDesc">&lt;us&gt; menerima contrac membunuh 1 bad mutha.</column>
+      <column name="strName">Bad Mutha Contract (Active)</column>
+      <column name="strDesc">has accepted a contract to eliminate three Bad Muthas.</column>
 			<column name="aFieldNames"></column>
 			<column name="aModifiers">0</column>
 			<column name="aEffects"></column>
@@ -30,8 +30,8 @@
 
     <table name="conditions">
       <column name="id">2</column>
-      <column name="strName">Bad Mutha Contract (Non - Aktif)</column>
-      <column name="strDesc">&lt;us&gt; Selesai</column>
+      <column name="strName">Bad Mutha Contract (Completed)</column>
+      <column name="strDesc">has completed the Bad Mutha contract.</column>
 			<column name="aFieldNames"></column>
 			<column name="aModifiers"></column>
 			<column name="aEffects"></column>
@@ -54,8 +54,8 @@
 
     <table name="conditions">
       <column name="id">3</column>
-      <column name="strName">Status Tolak Bounty Quest</column>
-      <column name="strDesc">&lt;us&gt; Bersifat Permanen</column>
+      <column name="strName">Bounty Contract Declined</column>
+      <column name="strDesc">has declined the bounty contract. This decision is permanent.</column>
 			<column name="aFieldNames"></column>
 			<column name="aModifiers"></column>
       <column name="aEffects"></column>
@@ -78,8 +78,8 @@
 
     <table name="conditions">
       <column name="id">4</column>
-      <column name="strName">Status Terima Bounty Quest</column>
-      <column name="strDesc">&lt;us&gt; Bersifat Permanen</column>
+      <column name="strName">Bounty Contract Accepted</column>
+      <column name="strDesc">has accepted the bounty contract.</column>
 			<column name="aFieldNames"></column>
 			<column name="aModifiers"></column>
       <column name="aEffects"></column>
@@ -102,8 +102,8 @@
 
     <table name="conditions">
 			<column name="id">5</column>
-			<column name="strName">Minggu Ke dua work permit perpanjang</column>
-			<column name="strDesc">&lt;us&gt;'s DSL work permit start minggu kedua</column>
+      <column name="strName">Second Week of Work Permit</column>
+      <column name="strDesc">'s DSL work permit has entered its second week.</column>
 			<column name="aFieldNames"></column>
 			<column name="aModifiers"></column>
 			<column name="aEffects"></column>
@@ -126,8 +126,8 @@
 
     <table name="conditions">
 			<column name="id">6</column>
-			<column name="strName">Selesai Minggu Ke dua work permit </column>
-			<column name="strDesc">&lt;us&gt;'s DSL work permit selesai minggu kedua</column>
+      <column name="strName">Second Week of Work Permit Completed</column>
+      <column name="strDesc">'s second week of the DSL work permit has ended.</column>
 			<column name="aFieldNames"></column>
 			<column name="aModifiers"></column>
 			<column name="aEffects"></column>
@@ -155,8 +155,8 @@
       <column name="id">1</column>
       <column name="nGroupID">90</column>
       <column name="nSubgroupID">1</column>
-      <column name="strName">security contracts</column>
-      <column name="strDesc">Security Contracts</column>
+      <column name="strName">Ask a Question</column>
+      <column name="strDesc">Ask a Question</column>
       <column name="strDescAlt"></column>
       <column name="nCondID">0:1</column>
       <column name="vImageList">DialogBertanya.png</column>
@@ -275,8 +275,8 @@
       <column name="id">4</column>
       <column name="nGroupID">30</column>
       <column name="nSubgroupID">1</column>
-      <column name="strName">Lencana Tier 1 untuk Contract</column>
-      <column name="strDesc">Lencana Tier 1</column>
+      <column name="strName">Tier 1 Contract Badge</column>
+      <column name="strDesc">Tier 1 Badge</column>
       <column name="strDescAlt"></column>
       <column name="nCondID">0:1</column>
       <column name="vImageList">LencanaTier1.png</column>
@@ -315,8 +315,8 @@
       <column name="id">5</column>
       <column name="nGroupID">90</column>
       <column name="nSubgroupID">4</column>
-      <column name="strName">Diaog Ngobrol</column>
-      <column name="strDesc">Dialog untuk ngobrol</column>
+      <column name="strName">Start a Conversation</column>
+      <column name="strDesc">Start a Conversation</column>
       <column name="strDescAlt"></column>
       <column name="nCondID">0:1</column>
       <column name="vImageList">DialogNgobrol.png</column>
@@ -355,8 +355,8 @@
       <column name="id">6</column>
       <column name="nGroupID">30</column>
       <column name="nSubgroupID">2</column>
-      <column name="strName">Bukti Quest Bounty Bad Mutha</column>
-      <column name="strDesc">Jari Bad Mutha</column>
+      <column name="strName">Bad Mutha Bounty Evidence</column>
+      <column name="strDesc">Bad Mutha Finger</column>
       <column name="strDescAlt"></column>
       <column name="nCondID">0:1</column>
       <column name="vImageList">JariBadMutha.png</column>
@@ -396,7 +396,7 @@
     <!-- @treasuretable -->
     <table name="treasuretable">
       <column name="id">1</column>
-      <column name="strName">Dialog Bounty Quest</column>
+      <column name="strName">Bounty Contract Dialog Options</column>
       <column name="aTreasures">NSB:90.1x1x1,NSB:90.2x1x1,NSB:90.3x1x1,NSB:90.4x1x1,30.2x1x1,NSE:90.96x1x1</column>
       <column name="bNested">0</column>
       <column name="bSuppress">0</column>
@@ -405,8 +405,8 @@
 
     <table name="treasuretable">
 			<column name="id">2</column>
-			<column name="strName">Item Untuk Bounty</column>
-			<column name="aTreasures">30.1x1x1</column>
+      <column name="strName">Bounty Contract Rewards</column>
+			<column name="aTreasures">30.1x1x3</column>
 			<column name="bNested">0</column>
 			<column name="bSuppress">0</column>
 			<column name="bIdentify">0</column>
@@ -414,7 +414,7 @@
 
     <table name="treasuretable">
 			<column name="id">3</column>
-			<column name="strName">jari Bad Mutha</column>
+      <column name="strName">Bad Mutha Finger</column>
 			<column name="aTreasures">30.2x1x1</column>
 			<column name="bNested">0</column>
 			<column name="bSuppress">0</column>
@@ -426,12 +426,12 @@
     <!-- @encounters -->
     <table name="encounters">
       <column name="id">1</column>
-      <column name="strName">"Hey kemarilah"</column>
-      <column name="strDesc">Seorang petugas berseragam memanggilmu sambil membaca dokumen mu.
+      <column name="strName">"Hey, Come Here"</column>
+      <column name="strDesc">A uniformed officer calls out to you while examining your documents.
 
-&quot;Sepertinya kamu menjanjikan dari dokumen mu, apakah kamu tertarik untuk melakukan beberapa misi untuk DMC?&quot;
+"It seems you have some promising qualifications. Would you be interested in taking on a few missions for the DMC?"
 
-&quot;Tenang, kamu dapat imbalannya.&quot;</column>
+"Don't worry. You will be compensated for your efforts."</column>
 
       <column name="strImg">EncNSBSecurity.png</column> 
       <column name="nTreasureID">0:3</column>
@@ -458,10 +458,10 @@
 
     <table name="encounters">
       <column name="id">2</column>
-      <column name="strName">Setuju Contracts </column>
-      <column name="strDesc">&quot;Bagus, ambil lencana ini.&quot;
+      <column name="strName">Accept Contract</column>
+      <column name="strDesc">"Excellent. Take this badge."
 
-&quot;Kamu bisa datang lagi nanti, senang berkerjasama dengan mu.&quot;</column>
+"You can come back anytime. I look forward to working with you."</column>
 
       <column name="strImg">EncNSBSecurity.png</column> 
       <column name="nTreasureID">NSB:2</column>
@@ -488,12 +488,12 @@
 
     <table name="encounters">
       <column name="id">3</column>
-      <column name="strName">Tolak Contracts </column>
-      <column name="strDesc">Petugas Menghela nafas
+      <column name="strName">Decline Contract</column>
+      <column name="strDesc">The officer sighs.
 
-&quot;Sayang sekali, jika itu pilihan mu baiklah.&quot;
+"That is unfortunate, but if that is your decision, so be it."
 
-&quot;Semoga Beruntung&quot;</column>
+"Good luck."</column>
 
       <column name="strImg">EncNSBSecurity.png</column> 
       <column name="nTreasureID">0:3</column>
@@ -520,8 +520,8 @@
 
     <table name="encounters">
       <column name="id">4</column>
-      <column name="strName">Masuk Bar </column>
-      <column name="strDesc">&quot;Yo kamu datang, apa yang kamu mau lakukan?&quot;</column>
+      <column name="strName">Enter the Bar</column>
+      <column name="strDesc">"Hey, you're back. What would you like to do?"</column>
 
       <column name="strImg">TempatBerburu.png</column> 
       <column name="nTreasureID">0:3</column>
@@ -548,12 +548,12 @@
 
     <table name="encounters">
       <column name="id">5</column>
-      <column name="strName">Dialog List Quest</column>
-      <column name="strDesc">Disini kamu melihat beberapa quest tergeletak di meja
+      <column name="strName">Available Contracts</column>
+      <column name="strDesc">You see several contract listings scattered across the table.
 
-&quot;Pilih quest yg kamu. mau semakin tinggi lencana kamu semakin banyak quest terbuka.&quot;
+"Choose a contract that interests you. The higher your badge tier, the more contracts become available."
 
-&quot;Jika kamu memilih quest tersebut, tidak bisa kamu batalkan. jadi pikirkan baik baik&quot;</column>
+"Once you accept a contract, you cannot cancel it. Make your decision carefully."</column>
 
       <column name="strImg">TempatBerburu.png</column> 
       <column name="nTreasureID">0:3</column>
@@ -580,10 +580,10 @@
 
     <table name="encounters">
       <column name="id">6</column>
-      <column name="strName">Quest Bounty Bad Mutha</column>
-      <column name="strDesc">&quot;Pilihan bagus, bunuh 3 bad mutha dan serahkan item nya kepadaku.&quot;
+      <column name="strName">Bad Mutha Bounty Contract</column>
+      <column name="strDesc">"Good choice. Eliminate three Bad Muthas and bring their fingers back to me."
 
-&quot;Ingat, waktunya hanya satu minggu. JIka lewat akan hangus.&quot;</column>
+"Remember, you have only one week to complete this contract. It will expire if you fail to meet the deadline."</column>
 
       <column name="strImg">TempatBerburu.png</column> 
       <column name="nTreasureID">0:3</column>
@@ -610,9 +610,8 @@
 
     <table name="encounters">
       <column name="id">10</column>
-      <column name="strName">Quest Bounty Bad Mutha - Clear</column>
-      <column name="strDesc">&quot; Gemlo, lu berhasil. gua kira cuma gimik&quot;</column>
-      <column name="strImg">TempatBerburu.png</column>
+      <column name="strName">Bad Mutha Bounty Contract - Completed</column>
+      <column name="strDesc">"Wow, you actually did it. I thought you were all talk."</column>
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">NSB:3</column>
       <column name="aConditions">2,-1</column>
@@ -637,10 +636,10 @@
 
     <table name="encounters">
       <column name="id">11</column>
-      <column name="strName">Quest Bounty Bad Mutha - Clear</column>
-      <column name="strDesc">&quot; Nih buat jajan lu.&quot;</column>
+      <column name="strName">Bad Mutha Bounty Contract - Reward</column>
+      <column name="strDesc">"Here. This should cover your expenses."</column>
       <column name="strImg">TempatBerburu.png</column>
-      <column name="nTreasureID">0:9</column>
+      <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
       <column name="aPreConditions"></column>
