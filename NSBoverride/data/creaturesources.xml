@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+-
+- NeoScav Bounty Override
+- biji kuda
+-
+-->
+
+<pma_xml_export version="1.0">
+    <database name="neogame">
+
+		<table name="creaturesources">
+            <column name="id">10</column>
+            <column name="strName">Zom Zom's Bad Mutha</column>
+            <column name="nX">20</column>
+            <column name="nY">148</column>
+            <column name="nCreatureID">NSE:2</column>
+            <column name="nMin">1</column>
+            <column name="nMax">2</column>
+            <column name="fWeight">1</column>
+        </table>
+		
+    </database>
+</pma_xml_export>

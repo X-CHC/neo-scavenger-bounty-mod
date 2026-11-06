@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+-
+- NeoScav Bounty Override
+- biji kuda
+-
+-->
+
+<pma_xml_export version="1.0">
+    <database name="neogame">
+
+		<table name="creatures">
+			<column name="id">2</column>
+			<column name="strName">Bad Mutha</column>
+			<column name="strNamePublic">Stranger</column>
+			<column name="strNotes"></column>
+			<column name="strImg">0:CreHuman.png</column>
+			<column name="vEncounterIDs">79,0:1398,0:1417</column>
+			<column name="nMovesPerTurn">4</column>
+			<column name="nTreasureID">0:9</column>
+			<column name="nFaction">0:3</column>
+			<column name="vAttackModes">0:1</column>
+			<column name="vBaseConditions">194=1,0:24=0.15,0:50=0.5,0:51=0.5,0:60=0.25,0:72=0.5,0:87=0.2,0:151=1,0:210=1,0:210=1,0:473=1,0:492=1,0:494=1,54=0.1,0:535=1,65=1,70=0.25,265=1,283=1,377=1</column>
+			<column name="nCorpseID">NSB:4</column>
+			<column name="vActivities">pacing,standing guard,practicing their game-face,swatting at bugs,counting human ears on a string</column>
+		</table>
+		
+    </database>
+</pma_xml_export>
