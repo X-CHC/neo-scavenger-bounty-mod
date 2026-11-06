@@ -141,7 +141,7 @@
 			<column name="bDisplay">0</column>
 			<column name="bDisplayOther">0</column>
 			<column name="bDisplayGameOver">0</column>
-			<column name="nColor">1</column>
+			<column name="nColor">0</column>
 			<column name="bResetTimer">0</column>
 			<column name="bRemoveAll">1</column>
 			<column name="bRemovePostCombat">0</column>
@@ -478,8 +478,8 @@
 
     <table name="treasuretable">
 			<column name="id">2</column>
-      <column name="strName">Bounty Contract Rewards</column>
-			<column name="aTreasures">30.1x1x3</column>
+      <column name="strName">Bounty Contract Badge</column>
+			<column name="aTreasures">30.1x1x1</column>
 			<column name="bNested">0</column>
 			<column name="bSuppress">0</column>
 			<column name="bIdentify">0</column>
@@ -488,7 +488,7 @@
     <table name="treasuretable">
 			<column name="id">3</column>
       <column name="strName">Bad Mutha Finger</column>
-			<column name="aTreasures">30.2x1x1</column>
+			<column name="aTreasures">30.2x1x3</column>
 			<column name="bNested">0</column>
 			<column name="bSuppress">0</column>
 			<column name="bIdentify">0</column>
@@ -611,7 +611,7 @@
       <column name="aConditions">0:1</column>
       <column name="aPreConditions">-3,4</column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSB:90.4x1=NSB:5x1x0x0x0,=NSB:4x1x0x0x0</column>
+      <column name="aResponses">90.4x1=NSB:5x1x0x0x0,90.4x1=NSB:11x1x0x0x0,30.2x3=NSB:10x1x0x0x0,=NSB:4x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
@@ -641,9 +641,9 @@
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
-      <column name="aPreConditions"></column>
+      <column name="aPreConditions">-1</column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSE:90.96x1=NSB:6x1x0x0x0,30.2x3=NSB:10x1x0x0x0,=NSB:5x1x0x0x0</column>
+      <column name="aResponses">NSE:90.96x1=NSB:6x1x0x0x0,=NSB:5x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
@@ -671,7 +671,7 @@
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">1,-2</column>
-      <column name="aPreConditions"></column>
+      <column name="aPreConditions">-1,-2,-8</column>
       <column name="fPrice">0</column>
       <column name="aResponses">0:90.10x1=NSE:243x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
@@ -697,9 +697,40 @@
 
 "Here. This should cover your expenses."</column>
 
+      <column name="strImg">TempatBerburu.png</column> 
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">NSB:3</column>
       <column name="aConditions">2,-1,7</column>
+      <column name="aPreConditions">1</column>
+      <column name="fPrice">0</column>
+      <column name="aResponses">=NSB:4x1x0x0x0</column>
+      <column name="aMinimapHexes"></column>
+      <column name="bRemoveCreatures">0</column>
+      <column name="bRemoveUsed">0</column>
+      <column name="nItemsID">0:3</column>
+      <column name="nCreatureID">0</column>
+      <column name="ptCreatureHex">0,0</column>
+      <column name="ptTeleport">0,0</column>
+      <column name="ptEditor">0,0</column>
+      <column name="nType">0</column>
+      <column name="fLootChance">0</column>
+      <column name="fAccidentChance">0</column>
+      <column name="fCreatureChance">0</column>
+      <column name="vAccidents">0</column>
+      <column name="vLoot">0</column>
+    </table>
+
+    <table name="encounters">
+      <column name="id">11</column>
+      <column name="strName">Available Contracts</column>
+      <column name="strDesc">The officer looks at you while reading the quest book.
+
+"Finish your current quest before taking on a new one. You can only have one active quest at a time."</column>
+
+      <column name="strImg">TempatBerburu.png</column> 
+      <column name="nTreasureID">0:3</column>
+      <column name="nRemoveTreasureID">0:3</column>
+      <column name="aConditions">0:1</column>
       <column name="aPreConditions">1</column>
       <column name="fPrice">0</column>
       <column name="aResponses">=NSB:4x1x0x0x0</column>
