@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+-
+- NeoScav Bounty Override
+- Bing Chilling
+-
+-->
+
+<pma_xml_export version="1.0">
+    <database name="neogame">
+
+        <table name="creatures">
+            <column name="id">6</column>
+            <column name="strName">Melonhead</column>
+            <column name="strNamePublic">Creature</column>
+            <column name="strNotes"></column>
+            <column name="strImg">CreMelonhead.png</column>
+            <column name="vEncounterIDs"></column>
+            <column name="nMovesPerTurn">3</column>
+            <column name="nTreasureID">352</column>
+            <column name="nFaction">6</column>
+            <column name="vAttackModes">1</column>
+            <column name="vBaseConditions">NSE:194=1,24=0.15,61=0.75,71=0.75,151=1,210=1,210=1,392=1,473=1,494=1,535=1,727=1,529=1</column>
+            <column name="nCorpseID">NSB:5</column>
+            <column name="vActivities">braying,drooling,listening to something</column>
+        </table>
+		
+    </database>
+</pma_xml_export>

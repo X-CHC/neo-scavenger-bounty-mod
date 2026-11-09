@@ -2,7 +2,7 @@
 <!--
 -
 - NeoScav Bounty Override
-- biji kuda
+- Bing Chilling
 -
 -->
 
@@ -24,6 +24,7 @@
 			<column name="nCorpseID">NSB:4</column>
 			<column name="vActivities">pacing,standing guard,practicing their game-face,swatting at bugs,counting human ears on a string</column>
 		</table>
+		
 		
     </database>
 </pma_xml_export>

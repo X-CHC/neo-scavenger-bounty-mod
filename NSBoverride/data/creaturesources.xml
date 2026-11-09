@@ -2,7 +2,7 @@
 <!--
 -
 - NeoScav Bounty Override
-- biji kuda
+- Bing Chilling
 -
 -->
 
@@ -17,7 +17,7 @@
             <column name="nCreatureID">NSE:2</column>
             <column name="nMin">1</column>
             <column name="nMax">2</column>
-            <column name="fWeight">1</column>
+            <column name="fWeight">0.8</column>
         </table>
 		
     </database>

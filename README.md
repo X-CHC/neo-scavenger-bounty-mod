@@ -8,7 +8,7 @@ Neo Scavenger Bounty is a mod designed for players who enjoy challenges, hunting
 
 The mod introduces a bounty and contract system through the Workforce Center, giving experienced survivors an opportunity to take on dangerous jobs and prove their abilities.
 
-Currently, the mod features one available bounty contract: **Bad Mutha**.
+Currently, the mod features one available bounty contract: **Bad Mutha**, and **Melonhead**.
 
 More contracts and additional content are planned for future updates.
 
@@ -46,6 +46,12 @@ A few things to keep in mind:
 
 Choose your assignments carefully. Not every contract is suitable for every survivor.
 
+## Credits & Acknowledgements
+
+- **Blue Bottle Games** – Creator of Neo Scavenger, the original game on which this mod is based.
+
+- **Chiko (Creator of Neo ScavExtended)** – Thank you for allowing me to use some of your code and image assets.
+
 ## Release Status
 
 <badge color="warning">Non-Final Release</badge>
@@ -55,6 +61,7 @@ Neo Scavenger Bounty is currently not in its final release state.
 The available content and features are subject to changes, adjustments, and improvements. Some aspects of the mod may not work as intended.
 
 Planned content:
+
 - Additional bounty contracts.
 - New targets and challenges.
 - Further gameplay and balance improvements.

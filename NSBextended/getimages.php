@@ -1,4 +1,4 @@
-nRows=9&nCols=2&strImageURL0=EncNSBSecurity.png
+nRows=11&nCols=2&strImageURL0=EncNSBSecurity.png
 &strImageURL1=DialogBertanya.png
 &strImageURL2=DialogMenolak.png
 &strImageURL3=DialogSetuju.png
@@ -7,4 +7,5 @@ nRows=9&nCols=2&strImageURL0=EncNSBSecurity.png
 &strImageURL6=TempatBerburu.png
 &strImageURL7=DialogNgobrol.png
 &strImageURL8=JariBadMutha.png
-
+&strImageURL9=KulitMelonHead.png
+&strImageURL10=KertasKontrak2.png

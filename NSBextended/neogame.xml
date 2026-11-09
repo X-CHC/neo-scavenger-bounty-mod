@@ -3,8 +3,11 @@
   <database name="neogame">
 
     <!-- Table conditions -->
-    <!--Bad Mutha Condition : 1 Active, 2 Complete, 7 reward, 8 failed, 9 available
-        Blue Frog Condition :-->
+    <!-- Tier 1
+        Bad Mutha          : 1 Active, 2 Complete, 7 reward, 8 failed, 9 available
+        Melonhead         : 10 Active, 11 Complete, 7 reward, 13 failed, 14 available
+                          : 12 400$
+        Tier 2-->
     <table name="conditions">
       <column name="id">1</column>
       <column name="strName">Bad Mutha Contract (Active)</column>
@@ -32,7 +35,7 @@
     <table name="conditions">
       <column name="id">2</column>
       <column name="strName">Bad Mutha Contract (Completed)</column>
-      <column name="strDesc">has completed the Bad Mutha contract.</column>
+      <column name="strDesc">&lt;us&gt; has completed the Bad Mutha contract.</column>
 			<column name="aFieldNames"></column>
 			<column name="aModifiers"></column>
 			<column name="aEffects"></column>
@@ -40,7 +43,7 @@
 			<column name="vIDNext">9</column>
 			<column name="fDuration">168</column>
 			<column name="bPermanent">0</column>
-			<column name="vChanceNext">0</column>
+			<column name="vChanceNext">1</column>
 			<column name="bStackable">0</column>
 			<column name="bDisplay">0</column>
 			<column name="bDisplayOther">0</column>
@@ -141,7 +144,7 @@
 			<column name="bDisplay">0</column>
 			<column name="bDisplayOther">0</column>
 			<column name="bDisplayGameOver">0</column>
-			<column name="nColor">0</column>
+			<column name="nColor">2</column>
 			<column name="bResetTimer">0</column>
 			<column name="bRemoveAll">1</column>
 			<column name="bRemovePostCombat">0</column>
@@ -151,8 +154,8 @@
 
     <table name="conditions">
       <column name="id">7</column>
-      <column name="strName">Received $300</column>
-      <column name="strDesc">&lt;us&gt; received $300.</column>
+      <column name="strName">Received $200</column>
+      <column name="strDesc">&lt;us&gt; received $200.</column>
       <column name="aFieldNames">Money</column>
       <column name="aModifiers">300</column>
       <column name="aEffects"></column>
@@ -221,6 +224,125 @@
 			<column name="aThresholds"></column>
     </table>
 
+    <table name="conditions">
+      <column name="id">10</column>
+      <column name="strName">Melonhead Contract (Active)</column>
+      <column name="strDesc">has accepted a contract to eliminate 3 Melonhead.</column>
+			<column name="aFieldNames"></column>
+			<column name="aModifiers">0</column>
+			<column name="aEffects"></column>
+			<column name="bFatal">0</column>
+			<column name="vIDNext">13</column>
+			<column name="fDuration">168</column>
+			<column name="bPermanent">0</column>
+			<column name="vChanceNext">1</column>
+			<column name="bStackable">0</column>
+			<column name="bDisplay">0</column>
+			<column name="bDisplayOther">0</column>
+			<column name="bDisplayGameOver">0</column>
+			<column name="nColor">3</column>
+			<column name="bResetTimer">0</column>
+			<column name="bRemoveAll">0</column>
+			<column name="bRemovePostCombat">0</column>
+			<column name="nTransferRange">-1</column>
+			<column name="aThresholds"></column>
+    </table>
+
+    <table name="conditions">
+      <column name="id">11</column>
+      <column name="strName">Melonhead Contract (Completed)</column>
+      <column name="strDesc">has completed the Melonhead contract.</column>
+			<column name="aFieldNames"></column>
+			<column name="aModifiers"></column>
+			<column name="aEffects"></column>
+			<column name="bFatal">0</column>
+			<column name="vIDNext">14</column>
+			<column name="fDuration">168</column>
+			<column name="bPermanent">0</column>
+			<column name="vChanceNext">1</column>
+			<column name="bStackable">0</column>
+			<column name="bDisplay">0</column>
+			<column name="bDisplayOther">0</column>
+			<column name="bDisplayGameOver">0</column>
+			<column name="nColor">0</column>
+			<column name="bResetTimer">0</column>
+			<column name="bRemoveAll">1</column>
+			<column name="bRemovePostCombat">0</column>
+			<column name="nTransferRange">-1</column>
+			<column name="aThresholds"></column>
+    </table>
+
+    <table name="conditions">
+      <column name="id">12</column>
+      <column name="strName">Received $400</column>
+      <column name="strDesc">&lt;us&gt; received $400.</column>
+      <column name="aFieldNames">Money</column>
+      <column name="aModifiers">400</column>
+      <column name="aEffects"></column>
+      <column name="bFatal">0</column>
+      <column name="vIDNext"></column>
+      <column name="fDuration">0</column>
+      <column name="bPermanent">1</column>
+      <column name="vChanceNext">0</column>
+      <column name="bStackable">0</column>
+      <column name="bDisplay">1</column>
+      <column name="bDisplayOther">0</column>
+      <column name="bDisplayGameOver">1</column>
+      <column name="nColor">2</column>
+      <column name="bResetTimer">0</column>
+      <column name="bRemoveAll">0</column>
+      <column name="bRemovePostCombat">0</column>
+      <column name="nTransferRange">-1</column>
+      <column name="aThresholds"></column>
+    </table>
+
+    <table name="conditions">
+      <column name="id">13</column>
+      <column name="strName">Melonhead Contract (Failed)</column>
+      <column name="strDesc">failure the Melonhead contract.</column>
+			<column name="aFieldNames"></column>
+			<column name="aModifiers"></column>
+			<column name="aEffects"></column>
+			<column name="bFatal">0</column>
+			<column name="vIDNext">14</column>
+			<column name="fDuration">72</column>
+			<column name="bPermanent">0</column>
+			<column name="vChanceNext">1</column>
+			<column name="bStackable">0</column>
+			<column name="bDisplay">0</column>
+			<column name="bDisplayOther">0</column>
+			<column name="bDisplayGameOver">0</column>
+			<column name="nColor">0</column>
+			<column name="bResetTimer">0</column>
+			<column name="bRemoveAll">1</column>
+			<column name="bRemovePostCombat">0</column>
+			<column name="nTransferRange">-1</column>
+			<column name="aThresholds"></column>
+    </table>
+
+    <table name="conditions">
+      <column name="id">14</column>
+      <column name="strName">Melonhead Contract (Available)</column>
+      <column name="strDesc">Available the Melonhead contract.</column>
+			<column name="aFieldNames"></column>
+			<column name="aModifiers"></column>
+			<column name="aEffects"></column>
+			<column name="bFatal">0</column>
+			<column name="vIDNext"></column>
+			<column name="fDuration">0</column>
+			<column name="bPermanent">0</column>
+			<column name="vChanceNext">0</column>
+			<column name="bStackable">0</column>
+			<column name="bDisplay">0</column>
+			<column name="bDisplayOther">0</column>
+			<column name="bDisplayGameOver">0</column>
+			<column name="nColor">0</column>
+			<column name="bResetTimer">0</column>
+			<column name="bRemoveAll">1</column>
+			<column name="bRemovePostCombat">0</column>
+			<column name="nTransferRange">-1</column>
+			<column name="aThresholds"></column>
+    </table>
     <!-- Table conditions end -->
 
     <!-- @itemtypes -->
@@ -435,11 +557,91 @@
       <column name="vImageList">JariBadMutha.png</column>
       <column name="vSpriteList"></column>
       <column name="vImageUsage">0,0,0,0,0,0</column>
-      <column name="fWeight">0.03</column>
+      <column name="fWeight">0.05</column>
       <column name="fMonetaryValue">50</column>
       <column name="fMonetaryValueAlt">0</column>
       <column name="fDurability">1</column>
       <column name="fDegradePerHour">0.00595238</column> <!-- 0.00595238-->
+      <column name="fEquipDegradePerHour">0</column>
+      <column name="fDegradePerUse">0</column>
+      <column name="vDegradeTreasureIDs">0:3,0:3</column>
+      <column name="aEquipConditions"></column>
+      <column name="aPossessConditions"></column>
+      <column name="aUseConditions"></column>
+      <column name="aCapacities"></column>
+      <column name="vEquipSlots">21,20</column>
+      <column name="vUseSlots"></column>
+      <column name="bSocketLocked">0</column>
+      <column name="vProperties">0:9,0:10,0:15,0:28,0:48,0:50,0:81</column>
+      <column name="aContentIDs"></column>
+      <column name="nFormatID">0:3</column>
+      <column name="nTreasureID">0:3</column>
+      <column name="nComponentID">0:3</column>
+      <column name="bMirrored">0</column>
+      <column name="nSlotDepth">0</column>
+      <column name="strChargeProfiles"></column>
+      <column name="aAttackModes"></column>
+      <column name="nStackLimit">1</column>
+      <column name="aSwitchIDs"></column>
+      <column name="aSounds">0:cuePickup,0:cuePutdown</column>
+    </table>
+
+    <table name="itemtypes">
+      <column name="id">7</column>
+      <column name="nGroupID">30</column>
+      <column name="nSubgroupID">3</column>
+      <column name="strName">Melonhead Bounty Evidence</column>
+      <column name="strDesc">Melonhead Scalp</column>
+      <column name="strDescAlt"></column>
+      <column name="nCondID">0:1</column>
+      <column name="vImageList">KulitMelonHead.png</column>
+      <column name="vSpriteList"></column>
+      <column name="vImageUsage">0,0,0,0,0,0</column>
+      <column name="fWeight">0.05</column>
+      <column name="fMonetaryValue">50</column>
+      <column name="fMonetaryValueAlt">0</column>
+      <column name="fDurability">1</column>
+      <column name="fDegradePerHour">0.00595238</column> <!-- 0.00595238-->
+      <column name="fEquipDegradePerHour">0</column>
+      <column name="fDegradePerUse">0</column>
+      <column name="vDegradeTreasureIDs">0:3,0:3</column>
+      <column name="aEquipConditions"></column>
+      <column name="aPossessConditions"></column>
+      <column name="aUseConditions"></column>
+      <column name="aCapacities"></column>
+      <column name="vEquipSlots">21,20</column>
+      <column name="vUseSlots"></column>
+      <column name="bSocketLocked">0</column>
+      <column name="vProperties">0:9,0:10,0:15,0:28,0:48,0:50,0:81</column>
+      <column name="aContentIDs"></column>
+      <column name="nFormatID">0:3</column>
+      <column name="nTreasureID">0:3</column>
+      <column name="nComponentID">0:3</column>
+      <column name="bMirrored">0</column>
+      <column name="nSlotDepth">0</column>
+      <column name="strChargeProfiles"></column>
+      <column name="aAttackModes"></column>
+      <column name="nStackLimit">3</column>
+      <column name="aSwitchIDs"></column>
+      <column name="aSounds">0:cuePickup,0:cuePutdown</column>
+    </table>
+
+    <table name="itemtypes">
+      <column name="id">8</column>
+      <column name="nGroupID">30</column>
+      <column name="nSubgroupID">4</column>
+      <column name="strName">Img Paper Contract 2</column>
+      <column name="strDesc">Img Paper Contract 2</column>
+      <column name="strDescAlt"></column>
+      <column name="nCondID">0:1</column>
+      <column name="vImageList">KertasKontrak2.png</column>
+      <column name="vSpriteList"></column>
+      <column name="vImageUsage">0,0,0,0,0,0</column>
+      <column name="fWeight">0</column>
+      <column name="fMonetaryValue">0</column>
+      <column name="fMonetaryValueAlt">0</column>
+      <column name="fDurability">1</column>
+      <column name="fDegradePerHour">0</column>
       <column name="fEquipDegradePerHour">0</column>
       <column name="fDegradePerUse">0</column>
       <column name="vDegradeTreasureIDs">0:3,0:3</column>
@@ -470,7 +672,7 @@
     <table name="treasuretable">
       <column name="id">1</column>
       <column name="strName">Bounty Contract Dialog Options</column>
-      <column name="aTreasures">NSB:90.1x1x1,NSB:90.2x1x1,NSB:90.3x1x1,NSB:90.4x1x1,30.2x1x1,NSE:90.96x1x1</column>
+      <column name="aTreasures">NSB:90.1x1x1,NSB:90.2x1x1,90.3x1x1,90.4x1x1,NSE:90.96x1x1,30.4x1x1</column>
       <column name="bNested">0</column>
       <column name="bSuppress">0</column>
       <column name="bIdentify">0</column>
@@ -503,6 +705,24 @@
       <column name="bIdentify">0</column>
     </table>
 
+    <table name="treasuretable">
+      <column name="id">5</column> 
+      <column name="strName">Melon Head corpse</column>
+      <column name="aTreasures">NSE:16.7x1x1,30.3x1.0x1-1</column>
+      <column name="bNested">0</column>
+      <column name="bSuppress">0</column>
+      <column name="bIdentify">0</column>
+    </table>
+    
+    <table name="treasuretable">
+			<column name="id">6</column>
+      <column name="strName">Melonhead Eye</column>
+			<column name="aTreasures">30.3x1x3</column>
+			<column name="bNested">0</column>
+			<column name="bSuppress">0</column>
+			<column name="bIdentify">0</column>
+		</table>
+
     <!-- !@treasuretable -->
 
     <!-- @encounters -->
@@ -519,7 +739,7 @@
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
-      <column name="aPreConditions">0:60,-3,-4,6</column>
+      <column name="aPreConditions">0:60,-3,-4,6</column> 
       <column name="fPrice">0</column>
       <column name="aResponses">NSB:90.2x1=NSB:2x1x0x0x0,NSB:90.3x1=NSB:3x1x0x0x0,=NSB:1x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
@@ -548,7 +768,7 @@
       <column name="strImg">EncNSBSecurity.png</column> 
       <column name="nTreasureID">NSB:2</column>
       <column name="nRemoveTreasureID">0:3</column>
-      <column name="aConditions">4,9</column>
+      <column name="aConditions">4,9,14</column>
       <column name="aPreConditions"></column>
       <column name="fPrice">0</column>
       <column name="aResponses">0:90.10x1=NSE:243x1x0x0x0</column>
@@ -611,7 +831,7 @@
       <column name="aConditions">0:1</column>
       <column name="aPreConditions">-3,4</column>
       <column name="fPrice">0</column>
-      <column name="aResponses">90.4x1=NSB:5x1x0x0x0,90.4x1=NSB:11x1x0x0x0,30.2x3=NSB:10x1x0x0x0,=NSB:4x1x0x0x0</column>
+      <column name="aResponses">90.4x1=NSB:5x1x0x0x0,90.4x1=NSB:11x1x0x0x0,30.3x3=NSB:13x1x0x0x0,30.2x3=NSB:10x1x0x0x0,=NSB:4x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
@@ -633,7 +853,7 @@
       <column name="strName">Available Contracts</column>
       <column name="strDesc">You see several contract listings scattered across the table.
 
-"Choose a contract that interests you. The higher your badge tier, the more contracts become available."
+"Choose a contract that interests you. Higher rewards come with greater risks and tougher challenges"
 
 "Once you accept a contract, you cannot cancel it. Make your decision carefully."</column>
 
@@ -641,9 +861,9 @@
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
-      <column name="aPreConditions">-1</column>
+      <column name="aPreConditions">-1,-10</column>
       <column name="fPrice">0</column>
-      <column name="aResponses">NSE:90.96x1=NSB:6x1x0x0x0,=NSB:5x1x0x0x0</column>
+      <column name="aResponses">NSE:90.96x1=NSB:6x1x0x0x0,30.4x1=NSB:12x1x0x0x0,=NSB:5x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
       <column name="bRemoveCreatures">0</column>
       <column name="bRemoveUsed">0</column>
@@ -665,13 +885,15 @@
       <column name="strName">Bad Mutha Bounty Contract</column>
       <column name="strDesc">"Good choice. Eliminate three Bad Muthas and bring their fingers back to me."
 
-"Remember, you have only one week to complete this contract. It will expire if you fail to meet the deadline."</column>
+"Remember, you have only one week to complete this contract. It will expire if you fail to meet the deadline."
+
+"He might be somewhere around Zom Zom. Try looking there."</column>
 
       <column name="strImg">TempatBerburu.png</column> 
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
-      <column name="aConditions">1,-2</column>
-      <column name="aPreConditions">-1,-2,-8</column>
+      <column name="aConditions">1,-9</column>
+      <column name="aPreConditions">9</column>
       <column name="fPrice">0</column>
       <column name="aResponses">0:90.10x1=NSE:243x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
@@ -731,7 +953,69 @@
       <column name="nTreasureID">0:3</column>
       <column name="nRemoveTreasureID">0:3</column>
       <column name="aConditions">0:1</column>
-      <column name="aPreConditions">1</column>
+      <column name="aPreConditions">1|2</column>
+      <column name="fPrice">0</column>
+      <column name="aResponses">=NSB:4x1x0x0x0</column>
+      <column name="aMinimapHexes"></column>
+      <column name="bRemoveCreatures">0</column>
+      <column name="bRemoveUsed">0</column>
+      <column name="nItemsID">0:3</column>
+      <column name="nCreatureID">0</column>
+      <column name="ptCreatureHex">0,0</column>
+      <column name="ptTeleport">0,0</column>
+      <column name="ptEditor">0,0</column>
+      <column name="nType">0</column>
+      <column name="fLootChance">0</column>
+      <column name="fAccidentChance">0</column>
+      <column name="fCreatureChance">0</column>
+      <column name="vAccidents">0</column>
+      <column name="vLoot">0</column>
+    </table>
+
+    <table name="encounters">
+      <column name="id">12</column>
+      <column name="strName">Melonhead Bounty Contract</column>
+      <column name="strDesc">"Not Bad choice. Eliminate 3 Melonheads and bring their scalps back to me."
+
+"Remember, you have only one week to complete this contract. It will expire if you fail to meet the deadline."
+
+"You might be able to handle one or two Melonheads, but I wouldn't want to find out what happens when ten of them come together."</column>
+
+      <column name="strImg">TempatBerburu.png</column> 
+      <column name="nTreasureID">0:3</column>
+      <column name="nRemoveTreasureID">0:3</column>
+      <column name="aConditions">10,-14</column>
+      <column name="aPreConditions">14</column>
+      <column name="fPrice">0</column>
+      <column name="aResponses">0:90.10x1=NSE:243x1x0x0x0</column>
+      <column name="aMinimapHexes"></column>
+      <column name="bRemoveCreatures">0</column>
+      <column name="bRemoveUsed">0</column>
+      <column name="nItemsID">0:1</column>
+      <column name="nCreatureID">0</column>
+      <column name="ptCreatureHex">0,0</column>
+      <column name="ptTeleport">0,0</column>
+      <column name="ptEditor">0,0</column>
+      <column name="nType">0</column>
+      <column name="fLootChance">0</column>
+      <column name="fAccidentChance">0</column>
+      <column name="fCreatureChance">0</column>
+      <column name="vAccidents">0</column>
+      <column name="vLoot">0</column>
+    </table>
+
+    <table name="encounters">
+      <column name="id">13</column>
+      <column name="strName">Melonhead Contract - Completed</column>
+      <column name="strDesc">"Wow, you actually did it. I thought you were all talk."
+
+"Here. This should cover your expenses."</column>
+
+      <column name="strImg">TempatBerburu.png</column> 
+      <column name="nTreasureID">0:3</column>
+      <column name="nRemoveTreasureID">NSB:6</column>
+      <column name="aConditions">11,-10,7</column>
+      <column name="aPreConditions">10</column>
       <column name="fPrice">0</column>
       <column name="aResponses">=NSB:4x1x0x0x0</column>
       <column name="aMinimapHexes"></column>
